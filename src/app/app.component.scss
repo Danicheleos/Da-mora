@@ -21,5 +21,6 @@ mat-toolbar {
 
 .main-wrapper {
   height: calc(100% - 50px);
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }

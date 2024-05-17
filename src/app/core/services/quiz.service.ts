@@ -22,10 +22,10 @@ export class QuizService {
   }
 
   public combineQuiz(): Question[] {
-    return this.dataSource$.value.sort((a, b) => 0.5 - Math.random()).slice(0, 10).map(question => {
+    return this.shuffle([...this.dataSource$.value]).slice(0, 10).map(question => {
       return {
         ...question,
-        answers: question.answers.sort((a, b) => 0.5 - Math.random())
+        answers: this.shuffle(question.answers)
       }
     });
   }
@@ -33,4 +33,13 @@ export class QuizService {
   private getDataByLang(lang: string) {
     return lang === 'ru' ? dataRu : dataPl;
   }
+
+  private shuffle(arr: any[]): any[] {
+    const array = [...arr];
+    for (let i = array.length - 1; i > 0; i--) { 
+      const j = Math.floor(Math.random() * (i + 1)); 
+      [array[i], array[j]] = [array[j], array[i]]; 
+    } 
+    return array; 
+  }; 
 }
