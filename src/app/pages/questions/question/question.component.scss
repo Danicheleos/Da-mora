@@ -15,6 +15,7 @@ mat-card {
     flex-direction: column;
     gap: 5px;
     .answer {
+      padding: 0 10px;
       &:not(:last-child) {
         border-bottom: 1px solid black;
       }
@@ -32,5 +33,5 @@ mat-card {
 }
 
 .answered {
-  border: 2px solid rgba(255, 0, 21, 0.78)
+  border: 2px solid rgba(255, 0, 21, 0.78) !important;
 }

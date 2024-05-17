@@ -7,8 +7,11 @@
   </mat-card-header>
   <mat-card-content>
     <div class="list">
-      <div class="answer"  [class.correct]="answer.correct"
-      [class.answered]="question.answered" *ngFor="let answer of question.answers; let index = index" role="listitem">
+      <div class="answer"
+           *ngFor="let answer of question.answers; let index = index"
+           [class.correct]="answer.correct"
+           [class.answered]="question.answered === index"
+           role="listitem">
         {{answer.text}}
       </div>
     </div>
