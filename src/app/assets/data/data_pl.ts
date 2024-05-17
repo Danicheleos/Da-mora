@@ -258,10 +258,10 @@ export const dataPl: Question[] = [
     ]
   },
   {
-    text: "Gdzie możemy spodziewać się strefy przyspieszenia wiatru?",
+    text: "Gdzie możemy się spodziewać «efektu dyszy»?",
     isMultiple: false,
     answers: [
-      { text: "pomiędzy wyspami a innymi obiektami.", correct: true },
+      { text: "pomiędzy wyspami a innymi przewężeniami.", correct: true },
       { text: "podczas ruchu zimnego frontu.", correct: false },
       { text: "podczas silnych opadów deszczu.", correct: false }
     ]
@@ -285,12 +285,12 @@ export const dataPl: Question[] = [
     ]
   },
   {
-    text: "Gdzie cyklon i antycyklon w układzie niskiego ciśnienia?",
+    text: "Gdzie w układzie niżowym występuje największe i najmniejsze ciśnienie atmosferyczne?",
     isMultiple: false,
     answers: [
-      { text: "cyklon w centrum, antycyklon na zewnątrz.", correct: true },
-      { text: "antycyklon w centrum, cyklon na zewnątrz.", correct: false },
-      { text: "wewnątrz i na zewnątrz niskiego ciśnienia.", correct: false }
+      { text: "najmniejsze w środku a największe na zewnątrz.", correct: true },
+      { text: "największe w środku a najmniejsze na zewnątrz.", correct: false },
+      { text: "w środku i na zewnątrz najmniejsze.", correct: false }
     ]
   },
   {
@@ -312,11 +312,11 @@ export const dataPl: Question[] = [
     ]
   },
   {
-    text: "Na wodach śródlądowych, w jakiej odległości od brzegu żeglarz jachtowy może prowadzić jacht o długości do 12 metrów?",
+    text: "Po wodach morskich, w jakiej odległości od brzegu, żeglarz jachtowy nie może prowadzić jachtu o długości  do 12 m?",
     isMultiple: false,
     answers: [
-      { text: "dalej niż 4 mile.", correct: false },
-      { text: "do 2 mil.", correct: true },
+      { text: "dalej niż 4 mile.", correct: true },
+      { text: "do 2 mil.", correct: false },
       { text: "do jednej mili.", correct: false }
     ]
   },
@@ -387,9 +387,9 @@ export const dataPl: Question[] = [
     text: "Jak nazywają się podstawowe żagle na jachcie typu szkuner?",
     isMultiple: false,
     answers: [
-      { text: "fok i sztaksyl.", correct: true },
-      { text: "fok i genaker.", correct: false },
-      { text: "fok i kliper.", correct: false }
+      { text: "grot i fok.", correct: true },
+      { text: "grot i genaker.", correct: false },
+      { text: "grot i kliwer.", correct: false }
     ]
   },
   {

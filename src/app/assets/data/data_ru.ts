@@ -314,8 +314,8 @@ export const dataRu: Question[] = [
     text: "В морских водах, в какой дальности от берега żeglarz jachtowy может управлять яхтой длиной до 12 метров?",
     isMultiple: false,
     answers: [
-      { text: "дальше 4 миль.", correct: false },
-      { text: "до 2 миль.", correct: true },
+      { text: "дальше 4 миль.", correct: true },
+      { text: "до 2 миль.", correct: false },
       { text: "до одной мили.", correct: false }
     ]
   },
