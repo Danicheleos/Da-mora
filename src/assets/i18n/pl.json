@@ -1,0 +1,13 @@
+{
+  "global": {
+    "main": "Głowna",
+    "language": "Język",
+    "quiz": "Quiz",
+    "questions": "Pytania",
+    "history": "Historia",
+    "prev": "Powrót",
+    "next": "Dalej",
+    "complete": "Zakończyć",
+    "restart": "Powtórz"
+  }
+}

@@ -1,0 +1,25 @@
+mat-toolbar {
+  height: 50px;
+  background-color: #97b8ff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+
+  .main {
+    display: flex;
+    margin: auto 0;
+    cursor: pointer;
+  }
+
+  .language {
+    display: flex;
+    margin: auto 0;
+    width: 100px;
+  }
+
+}
+
+.main-wrapper {
+  height: calc(100% - 50px);
+  overflow: auto;
+}

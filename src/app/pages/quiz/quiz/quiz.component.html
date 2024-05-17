@@ -1,0 +1,32 @@
+<mat-card *ngIf="currentQuestion && !showResults">
+  <mat-card-header>
+    <mat-card-title>{{currentQuestion.text}}</mat-card-title>
+    <mat-card-subtitle *ngIf="currentQuestion.image">
+      <img [src]="currentQuestion.image">
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-radio-group [(ngModel)]="currentQuestion.answered">
+      <div class="list">
+        <div class="answer" *ngFor="let answer of currentQuestion.answers; let index = index" role="listitem">
+          <mat-radio-button [value]="index">{{answer.text}}</mat-radio-button>
+        </div>
+      </div>
+    </mat-radio-group>
+  </mat-card-content>
+  <mat-card-footer>
+    <div>
+      <button mat-button (click)="prevQuestion()" color="primary" [disabled]="currentQuestionIndex <= 0">{{'global.prev' | translate}}</button>
+      <button mat-button (click)="nextQuestion()" color="primary" [disabled]="currentQuestionIndex + 1 >= questions.length">{{'global.next' | translate}}</button>
+    </div>
+    <button mat-button (click)="complete()" color="primary" [disabled]="!allowToComplete">{{'global.complete' | translate}}</button>
+  </mat-card-footer>
+</mat-card>
+
+<div class="questions-wrapper" *ngIf="showResults">
+  <button class="rerun" mat-button (click)="startQuiz()" color="primary">{{'global.restart' | translate}}</button>
+  <div class="result">
+    {{result}}\{{questions.length}}
+  </div>
+  <app-question *ngFor="let question of questions" [question]="question"></app-question>
+</div>

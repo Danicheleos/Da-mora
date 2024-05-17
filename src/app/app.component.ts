@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'damora-test';
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang('ru');
+    translate.use('ru');
+  }
+  
+  public changeLang(lang: string): void {
+    this.translate.use(lang);
+  }
 }

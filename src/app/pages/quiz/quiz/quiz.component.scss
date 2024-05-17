@@ -1,0 +1,47 @@
+:host {
+  display: block;
+}
+
+
+mat-card {
+  margin: 20px auto 0;
+  max-width: 500px;
+
+  mat-card-header {
+    border-bottom: 1px solid rgba(96, 96, 96, 0.307);
+  }
+
+  mat-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    .answer {
+      &:not(:last-child) {
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+
+  mat-card-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.questions-wrapper {
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+
+  .rerun {
+    margin: 20px auto;
+  }
+
+  .result {
+    font-size: 15rem;
+    line-height: 15rem;
+    margin: auto;
+  }
+}
