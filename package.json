@@ -1,6 +1,7 @@
 {
   "name": "damora-test",
   "version": "0.0.0",
+  "homepage": "https://danicheleos.github.io/Da-mora",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
