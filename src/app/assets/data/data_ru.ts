@@ -3,7 +3,7 @@ import { Question } from 'src/app/core/interfaces/question.interface';
 export const dataRu: Question[] = [
   {
     text: 'Что означает такой знак перед входом в канал?',
-    image: '/assets/images/1.png',
+    image: 'assets/images/1.png',
     answers: [
       { text: 'следите за волнами, создаваемыми моторными лодками', correct: false },
       { text: 'запрет создания волн', correct: true },
@@ -12,7 +12,7 @@ export const dataRu: Question[] = [
   },
   {
     text: 'Что должен сделать рулевой яхты, когда заметит на курсе знаки ниже?',
-    image: '/assets/images/2.png',
+    image: 'assets/images/2.png',
     answers: [
       { text: 'пропустить моторные судна, идущие с противоположной стороны', correct: false },
       { text: 'не пересекать границы, отмеченные белым цветом', correct: true },
@@ -21,7 +21,7 @@ export const dataRu: Question[] = [
   },
   {
     text: 'На водном пути под мостом рулевой заметил знак ниже. Что означает этот знак?',
-    image: '/assets/images/3.png',
+    image: 'assets/images/3.png',
     answers: [
       { text: 'можно идти только одним направлением и со стороны знака', correct: false },
       { text: 'сложный водный путь', correct: false },
@@ -30,7 +30,7 @@ export const dataRu: Question[] = [
   },
   {
     text: 'Где рулевой должен пришвартоваться, если идет в направлении знака ниже?',
-    image: '/assets/images/4.png',
+    image: 'assets/images/4.png',
     answers: [
       { text: 'в любом месте, знак означает место стоянки', correct: false },
       { text: 'нельзя швартовать с правой стороны знака', correct: false },
@@ -39,7 +39,7 @@ export const dataRu: Question[] = [
   },
   {
     text: 'С какой стороны следует обойти кардинальный знак внизу?',
-    image: '/assets/images/5.png',
+    image: 'assets/images/5.png',
     answers: [
       { text: 'знак обойти с севера', correct: true },
       { text: 'информирует нас об опасности с севера, знак обойти с юга', correct: false },
@@ -157,7 +157,7 @@ export const dataRu: Question[] = [
   {
     text: 'Яхта, идущая с моря в порт Гдыни приблежается до представленного ниже навигационного знака, установленного перед входом в порт. Что должен сделать рулевой?',
     isMultiple: false,
-    image: '/assets/images/19.png',
+    image: 'assets/images/19.png',
     answers: [
       { text: 'пройти знак левым бортом', correct: false },
       { text: 'пройти знак правым бортом', correct: true },
@@ -167,7 +167,7 @@ export const dataRu: Question[] = [
   {
     text: 'Яхта, идущая по течению реки, сближается с предоставленными ниже навигационными знаками, установленными на берегу. Что должен сделать рулевой?',
     isMultiple: false,
-    image: '/assets/images/20.png',
+    image: 'assets/images/20.png',
     answers: [
       { text: 'направить судно в сторону левого берега', correct: false },
       { text: 'держаться в безопасном расстоянии от знака', correct: false },
@@ -485,7 +485,7 @@ export const dataRu: Question[] = [
   },
   {
     text: "Перед выходом в канал, рулевой заметил знак ниже. Что он означает?",
-    image: '/assets/images/56.png',
+    image: 'assets/images/56.png',
     answers: [
       { text: "предписание соблюдения особой осторожности,", correct: false },
       { text: "предписание остановки судна,", correct: false },
@@ -494,7 +494,7 @@ export const dataRu: Question[] = [
   },
   {
     text: "Что означает знак ниже?",
-    image: '/assets/images/57.png',
+    image: 'assets/images/57.png',
     answers: [
       { text: "линия напряжения над водным путём на расстоянии 12 метров от знака,", correct: false },
       { text: "линия напряжения над водным путём на высоте 12 метров над уровнем наивысшей воды,", correct: true },
@@ -712,7 +712,7 @@ export const dataRu: Question[] = [
   },
   {
     text: "Какой тип шверта показан на рисунке?",
-    image: '/assets/images/84.png',
+    image: 'assets/images/84.png',
     answers: [
       { text: "балластный", correct: false },
       { text: "осевой", correct: true },
@@ -818,7 +818,7 @@ export const dataRu: Question[] = [
   },
   {
     text: "На рисунке представлен знак:", //warn
-    image: '/assets/images/97.png',
+    image: 'assets/images/97.png',
     answers: [
       { text: "восточный кардинальный знак", correct: false },
       { text: "западный кардинальный знак", correct: true },
@@ -827,7 +827,7 @@ export const dataRu: Question[] = [
   },
   {
     text: "Знак на рисунке говорит о том, что опасность находится:", //warn
-    image: '/assets/images/98.png',
+    image: 'assets/images/98.png',
     answers: [
       { text: "к востоку от знака", correct: true },
       { text: "к западу от знака", correct: false },
@@ -1094,7 +1094,7 @@ export const dataRu: Question[] = [
   },
   {
     text: "На берегу виден такой знак. Что он означает?",
-    image: '/assets/images/131.png',
+    image: 'assets/images/131.png',
     answers: [
       { text: "обратить внимание на мост с высотой пролета над водой, указанной на знаке (12 м)", correct: false },
       { text: "Запрещение движения судов с мощностью двигателя большей, чем указано на знаке (12 л.с.)", correct: false },
@@ -1103,7 +1103,7 @@ export const dataRu: Question[] = [
   },
   {
     text: "На берегу замечен следующий знак. Как нужно себя вести?",
-    image: '/assets/images/132.png',
+    image: 'assets/images/132.png',
     answers: [
       { text: "будьте осторожны, могут пройти быстроходные катера и водные мотоциклы", correct: false },
       { text: "уменьшить скорость, чтобы не создавать волну", correct: true },
@@ -1112,7 +1112,7 @@ export const dataRu: Question[] = [
   },
   {
     text: "Замечен следующий знак. Что он означает?",
-    image: '/assets/images/133.png',
+    image: 'assets/images/133.png',
     answers: [
       { text: "замечание проявить крайнюю осторожность", correct: true },
       { text: "запрет на движение парусных судов", correct: false },
@@ -1121,7 +1121,7 @@ export const dataRu: Question[] = [
   },
   {
     text: "Что означает этот знак?",
-    image: '/assets/images/134.png',
+    image: 'assets/images/134.png',
     answers: [
       { text: "приказ плыть только с одним парусом", correct: false },
       { text: "приоритет прохода парусных яхт", correct: false },
@@ -1130,7 +1130,7 @@ export const dataRu: Question[] = [
   },
   {
     text: "На берегу виден такой знак. Что он означает?",
-    image: '/assets/images/135.png',
+    image: 'assets/images/135.png',
     answers: [
       { text: "внимание, подводное препятствие", correct: false },
       { text: "приказ подать звуковой сигнал", correct: true },
@@ -1139,7 +1139,7 @@ export const dataRu: Question[] = [
   },
   {
     text: "Яхта длиной 8 м и высотой мачты 14 м входит в канал. На берегу есть указатели. Как следует поступить?",
-    image: '/assets/images/136.png',
+    image: 'assets/images/136.png',
     answers: [
       { text: "препятствий нет, продолжить движение", correct: false },
       { text: "опустить мачту и идти дальше", correct: true },
@@ -1148,7 +1148,7 @@ export const dataRu: Question[] = [
   },
   {
     text: "С яхты с высотой мачты 8 м, шириной 3 м и осадкой 1 м у входа в канал был замечен такой знак, как показано на рисунке. Как поступить?",
-    image: '/assets/images/137.png',
+    image: 'assets/images/137.png',
     answers: [
       { text: "пройти невозможно, надо повернуть назад", correct: false },
       { text: "вы можете идти после складывания мачты", correct: true },

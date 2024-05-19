@@ -3,7 +3,7 @@ import { Question } from 'src/app/core/interfaces/question.interface';
 export const dataPl: Question[] = [
   {
     text: 'Co oznacza taki znak przed wejściem do kanału?',
-    image: '/assets/images/1.png',
+    image: 'assets/images/1.png',
     answers: [
       { text: 'uwaga na fale wytwarzane przez motorówki', correct: false },
       { text: 'zakaz wytwarzania fali', correct: true },
@@ -12,7 +12,7 @@ export const dataPl: Question[] = [
   },
   {
     text: 'Co musi zrobić sternik jachtu, kiedy na kursie zauważy poniższe znaki?',
-    image: '/assets/images/2.png',
+    image: 'assets/images/2.png',
     answers: [
       { text: 'przepuścić jednostki motorowe płynące z naprzeciwka', correct: false },
       { text: 'nie przekraczać skrajni zaznaczonej białymi kolorami', correct: true },
@@ -21,7 +21,7 @@ export const dataPl: Question[] = [
   },
   {
     text: 'Na drodze wodnej pod mostem sternik zauważył poniższy znak. Co on oznacza?',
-    image: '/assets/images/3.png',
+    image: 'assets/images/3.png',
     answers: [
       { text: 'można płynąć tylko w jednym kierunku i od strony znaku', correct: false },
       { text: 'utrudnienia na torze wodnym', correct: false },
@@ -30,7 +30,7 @@ export const dataPl: Question[] = [
   },
   {
     text: 'Gdzie sternik musi zacumować jacht jeśli płynie w kierunku poniższego znaku?',
-    image: '/assets/images/4.png',
+    image: 'assets/images/4.png',
     answers: [
       { text: 'w dowolnym miejscu, znak oznacza miejsce postojowe', correct: false },
       { text: 'nie wolno parkować z prawej strony znaku', correct: false },
@@ -39,7 +39,7 @@ export const dataPl: Question[] = [
   },
   {
     text: 'Od której strony należy omijać poniższy znak kardynalny?',
-    image: '/assets/images/5.png',
+    image: 'assets/images/5.png',
     answers: [
       { text: 'znak omijamy od północy', correct: true },
       { text: 'informuje nas o niebezpieczeństwach znajdujących się od północnej strony, znak omijamy od południa', correct: false },
@@ -157,7 +157,7 @@ export const dataPl: Question[] = [
   {
     text: 'Jacht płynący z morza do portu w Gdyni, zbliżył się do przedstawionego niżej znaku nawigacyjnego ustawionego przed wejściem do portu. Co musi zrobić sternik?',
     isMultiple: false,
-    image: '/assets/images/19.png',
+    image: 'assets/images/19.png',
     answers: [
       { text: 'minąć znak lewa burta', correct: false },
       { text: 'minąć znak prawa burta', correct: true },
@@ -167,7 +167,7 @@ export const dataPl: Question[] = [
   {
     text: 'Jacht płynący z prądem rzeki zbliża się do przedstawionych niżej znaków nawigacyjnych ustawionych na brzegu. Co musi zrobić sternik?',
     isMultiple: false,
-    image: '/assets/images/20.png',
+    image: 'assets/images/20.png',
     answers: [
       { text: 'skierować się w stronę lewego brzegu', correct: false },
       { text: 'trzymać się w bezpiecznej odległości od znaku', correct: false },
@@ -486,7 +486,7 @@ export const dataPl: Question[] = [
   },
   {
     text: "Przed wpłynięciem do kanału sternik zauważyl poniższy znak. Co on oznacza?",
-    image: '/assets/images/56.png',
+    image: 'assets/images/56.png',
     answers: [
       { text: "nakaz zachowania szczególnej ostrożności,", correct: false },
       { text: "nakaz zatrzymania statku,", correct: false },
@@ -495,7 +495,7 @@ export const dataPl: Question[] = [
   },
   {
     text: "Co oznacza znak zamieszczony poniżej?",
-    image: '/assets/images/57.png',
+    image: 'assets/images/57.png',
     answers: [
       { text: "linia napowietrzana nad drogą wodną w odleglości 12 metrow od znaku,", correct: false },
       { text: "linia napowietrzana nad drogą wodną na wysokości 12 metrów nad poziomem najwyższej,", correct: true },
@@ -714,7 +714,7 @@ export const dataPl: Question[] = [
   },
   {
     text: "Jaki rodzaj miecz obrazuje rysunek obok?",
-    image: '/assets/images/84.png',
+    image: 'assets/images/84.png',
     answers: [
       { text: "balastowy", correct: false },
       { text: "szybrowy", correct: true },
@@ -820,7 +820,7 @@ export const dataPl: Question[] = [
   },
   {
     text: "Na rysunku przedstawiony jest znak:",
-    image: '/assets/images/97.png',
+    image: 'assets/images/97.png',
     answers: [
       { text: "wschodni znak kardynalny", correct: false },
       { text: "zachodni znak kardynalny", correct: true },
@@ -829,7 +829,7 @@ export const dataPl: Question[] = [
   },
   {
     text: "Znak na rysunku mówi nam, że niebezpieczeństwo znajduje się na:",
-    image: '/assets/images/98.png',
+    image: 'assets/images/98.png',
     answers: [
       { text: "wschód od znaku", correct: true },
       { text: "zachód od znaku", correct: false },
@@ -1096,7 +1096,7 @@ export const dataPl: Question[] = [
   },
   {
     text: "Na brzegu widnieje taki znak. Co on oznacza:",
-    image: '/assets/images/131.png',
+    image: 'assets/images/131.png',
     answers: [
       { text: "uwaga most o wysokości przęsła nad wodą podanej na znaku (12 m)", correct: false },
       { text: "zakaz ruchu statków o mocy silnika większej niż podana na znaku (12KM)", correct: false },
@@ -1105,7 +1105,7 @@ export const dataPl: Question[] = [
   },
   {
     text: "Zaobserwowano znak oznacza:",
-    image: '/assets/images/132.png',
+    image: 'assets/images/132.png',
     answers: [
       { text: "zachować ostrożność, mogą przepływać szybkie łodzie i skutery wodne", correct: false },
       { text: "zmniejszyć szybkość, aby nie wytwarzać fali", correct: true },
@@ -1114,7 +1114,7 @@ export const dataPl: Question[] = [
   },
   {
     text: "Zaobserwowano znak przedstawiony na rysunku. Co on oznacza?",
-    image: '/assets/images/133.png',
+    image: 'assets/images/133.png',
     answers: [
       { text: "nakaz zachowania szczególnej ostrożności", correct: true },
       { text: "zakaz ruchu statków żaglowych", correct: false },
@@ -1123,7 +1123,7 @@ export const dataPl: Question[] = [
   },
   {
     text: "Co oznacza ten znak?",
-    image: '/assets/images/134.png',
+    image: 'assets/images/134.png',
     answers: [
       { text: "nakaz żeglugi tylko z jednym żaglem", correct: false },
       { text: "pierwszeństwo przejścia dla jachtów żaglowych", correct: false },
@@ -1132,7 +1132,7 @@ export const dataPl: Question[] = [
   },
   {
     text: "Zaobserwowała znak oznacza?",
-    image: '/assets/images/135.png',
+    image: 'assets/images/135.png',
     answers: [
       { text: "uwaga, przeszkoda podwodna", correct: false },
       { text: "nakaz nadania sygnału dźwiękowego", correct: true },
@@ -1141,7 +1141,7 @@ export const dataPl: Question[] = [
   },
   {
     text: "Jacht o długości 8 m i wysokości masztu 14 m wpływa do kanału. Na brzegu ustawione są znaki. Co należy zrobić?",
-    image: '/assets/images/136.png',
+    image: 'assets/images/136.png',
     answers: [
       { text: "nie ma przeszkód, płynąć dalej", correct: false },
       { text: "położyć maszt i płynąć dalej", correct: true },
@@ -1150,7 +1150,7 @@ export const dataPl: Question[] = [
   },
   {
     text: "Z jachtu o wysokości masztu 8 m, szerokości 3 m i zanurzeniu 1 m, zaobserwowano przy wejściu do kanału tablice jak na rysunku. Jak należy postąpić?",
-    image: '/assets/images/137.png',
+    image: 'assets/images/137.png',
     answers: [
       { text: "nie da się przejść, należy zawrócić", correct: false },
       { text: "można przejść po złożeniu masztu", correct: true },
