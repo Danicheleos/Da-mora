@@ -12,6 +12,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSelectModule} from '@angular/material/select';
 import { MatToolbarModule } from '@angular/material/toolbar';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -36,11 +37,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     }),
     BrowserAnimationsModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
-  return new TranslateHttpLoader(http);
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
