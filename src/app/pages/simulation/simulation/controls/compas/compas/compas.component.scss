@@ -1,0 +1,27 @@
+:host {
+  display: block;
+}
+
+.compass-wrapper {
+  width: 200px;
+  height: 200px;
+  background: url('/assets/images/compass.png');
+  background-size: contain;
+  display: flex;
+  position: relative;
+
+  .compass-values {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .compass-arrow {
+    margin: auto;
+    height: 200px;
+    width: 20px;
+  }
+}

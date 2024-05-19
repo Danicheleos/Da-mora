@@ -1,0 +1,18 @@
+:host {
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+.compass {
+  position: absolute;
+
+  right: 20px;
+  top: 100px;
+}
+
+canvas {
+  height: 800px;
+  width: 800px;
+  margin: auto;
+}

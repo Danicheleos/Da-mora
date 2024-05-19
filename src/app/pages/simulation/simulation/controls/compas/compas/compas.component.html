@@ -1,0 +1,15 @@
+<div class="compass-wrapper">
+  <div class="compass-values">
+    <p>
+      <button (click)="addWindPower(-1)">-</button>
+      {{(simulationService.wind$ | async)?.power}} m\c
+      <button (click)="addWindPower(1)">+</button>
+    </p>
+    <p>
+      <button (click)="addWindAzimuth(-10)">-</button>
+      {{(simulationService.wind$ | async)?.azimuth}}°
+      <button (click)="addWindAzimuth(10)">+</button>
+    </p>
+  </div>
+  <img class="compass-arrow" style.transform="rotate({{(simulationService.wind$ | async)?.azimuth}}deg)"  src="/assets/images/arrow.png">
+</div>
