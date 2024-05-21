@@ -10,7 +10,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatSelectModule} from '@angular/material/select';
+import { MatSelectModule} from '@angular/material/select';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { APP_BASE_HREF } from '@angular/common';
 @NgModule({
@@ -30,8 +30,10 @@ import { APP_BASE_HREF } from '@angular/common';
         loader: {
             provide: TranslateLoader,
             useFactory: HttpLoaderFactory,
-            deps: [HttpClient]
-        }
+            deps: [HttpClient],
+        },
+        defaultLanguage: 'pl',
+        useDefaultLang: true
     }),
     BrowserAnimationsModule
   ],

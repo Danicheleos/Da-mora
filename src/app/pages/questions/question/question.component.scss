@@ -11,14 +11,23 @@ mat-card {
   }
 
   mat-card-content {
+    margin: 10px 0;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     .answer {
-      padding: 0 10px;
-      &:not(:last-child) {
-        border-bottom: 1px solid black;
+      background-color: rgba(95, 95, 95, 0.1);
+      border-radius: 15px;
+      padding: 5px 10px;
+
+      &.correct {
+        background-color: aquamarine !important; 
       }
+
+      &.answered {
+        background-color: #97b8ff5c;
+      }
+      
     }
   }
 
@@ -28,10 +37,3 @@ mat-card {
   }
 }
 
-.correct {
-  background-color: aquamarine;
-}
-
-.answered {
-  border: 2px solid rgba(255, 0, 21, 0.78) !important;
-}

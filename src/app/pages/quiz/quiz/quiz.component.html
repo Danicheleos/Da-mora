@@ -1,20 +1,21 @@
 <mat-card *ngIf="currentQuestion && !showResults">
   <mat-card-header>
-    <mat-card-title>{{currentQuestion.text}}</mat-card-title>
+    <mat-card-title>
+      <p *ngIf="!isInfinite">{{(currentQuestionIndex + 1) + '/' + (questions.length)}}</p>
+      <p>{{currentQuestion[usedField]}}</p>
+    </mat-card-title>
     <mat-card-subtitle *ngIf="currentQuestion.image">
       <img [src]="currentQuestion.image">
     </mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <mat-radio-group [(ngModel)]="currentQuestion.answered">
-      <div class="list">
-        <div class="answer" *ngFor="let answer of currentQuestion.answers; let index = index" role="listitem">
-          <mat-radio-button [value]="index">{{answer.text}}</mat-radio-button>
-        </div>
+    <mat-radio-group>
+      <div class="answer" (pointerdown)="select(index)" [class.correct]="isInfinite && answer.correct && currentQuestion.answered !== undefined" [class.selected]="currentQuestion.answered === index" *ngFor="let answer of currentQuestion.answers; let index = index">
+        <mat-radio-button [value]="index">{{answer[usedField]}}</mat-radio-button>
       </div>
     </mat-radio-group>
   </mat-card-content>
-  <mat-card-footer>
+  <mat-card-footer *ngIf="!isInfinite">
     <div>
       <button mat-button (click)="prevQuestion()" color="primary" [disabled]="currentQuestionIndex <= 0">{{'global.prev' | translate}}</button>
       <button mat-button (click)="nextQuestion()" color="primary" [disabled]="currentQuestionIndex + 1 >= questions.length">{{'global.next' | translate}}</button>
