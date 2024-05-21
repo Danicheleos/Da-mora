@@ -72,7 +72,7 @@ export class QuizComponent implements OnInit {
   public select(index: number): void {
     if (!this.currentQuestion) return;
     this.currentQuestion.answered = index;
-    setTimeout(() => this.nextQuestion(), this.isInfinite ? 1500 : 0);
+    setTimeout(() => this.nextQuestion(), this.isInfinite ? 1500 : 200);
   }
 
   public nextQuestion(): void {
