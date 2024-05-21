@@ -32,11 +32,13 @@ mat-card {
       }
 
       &.selected {
-        background-color: #97b8ff38;
+        background-color: #97b8ff68;
       }
 
-      &:hover {
-        background-color: #97b8ff68;
+      @media(hover: hover) and (pointer: fine) {
+        &:hover {
+          background-color: #97b8ff83;
+        }
       }
 
       ::ng-deep .mdc-radio {
