@@ -29,5 +29,5 @@
   <div class="result">
     {{result}}\{{questions.length}}
   </div>
-  <app-question *ngFor="let question of questions" [question]="question"></app-question>
+  <app-question *ngFor="let question of questions; let index = index" [index]="index" [question]="question"></app-question>
 </div>
