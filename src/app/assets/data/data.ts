@@ -4,7 +4,7 @@ export const data: Question[] = [
   {
     textPl: 'Co oznacza taki znak przed wejściem do kanału?',
     textRu: 'Что означает такой знак перед входом в канал?',
-    image: '/assets/images/1.png',
+    image: 'assets/images/1.png',
     answers: [
       {
         textPl: 'Uwaga na fale wytwarzane przez motorówki',
@@ -28,7 +28,7 @@ export const data: Question[] = [
       'Co musi zrobić sternik jachtu, kiedy na kursie zauważy poniższe znaki?',
     textRu:
       'Что должен сделать рулевой яхты, когда заметит на курсе знаки ниже?',
-    image: '/assets/images/2.png',
+    image: 'assets/images/2.png',
     answers: [
       {
         textPl: 'Przepuścić jednostki motorowe płynące z naprzeciwka',
@@ -52,7 +52,7 @@ export const data: Question[] = [
       'Na drodze wodnej pod mostem sternik zauważył poniższy znak. Co on oznacza?',
     textRu:
       'На водном пути под мостом рулевой заметил знак ниже. Что означает этот знак?',
-    image: '/assets/images/3.png',
+    image: 'assets/images/3.png',
     answers: [
       {
         textPl: 'Można płynąc tylko w jednym kierunku i od strony znaku',
@@ -76,7 +76,7 @@ export const data: Question[] = [
       'Gdzie sternik musi zacumować jacht jeśli płynie w kierunku poniższego znaku?',
     textRu:
       'Где рулевой должен пришвартоваться, если идет в направлении знака ниже?',
-    image: '/assets/images/4.png',
+    image: 'assets/images/4.png',
     answers: [
       {
         textPl: 'W dowolnym miejscu, znak oznacza miejsce postojowe',
@@ -98,7 +98,7 @@ export const data: Question[] = [
   {
     textPl: 'Od której strony należy omijać poniższy znak kardynalny?',
     textRu: 'C какой стороны следует обойти кардинальный знак внизу?',
-    image: '/assets/images/5.png',
+    image: 'assets/images/5.png',
     answers: [
       {
         textPl: 'Znak omijamy od północy',
@@ -418,7 +418,7 @@ export const data: Question[] = [
     textRu:
       'Яхта, идущая с моря в порт Гдыни приблежается до представленного ниже навигационного знака, установленного перед входом в порт. Что должен сделать рулевой?',
     isMultiple: false,
-    image: '/assets/images/19.png',
+    image: 'assets/images/19.png',
     answers: [
       {
         textPl: 'Minąć znak lewa burta',
@@ -443,7 +443,7 @@ export const data: Question[] = [
     textRu:
       'Яхта, идущая по течению реки, сближается с предоставленными ниже навигационными знаками, установленными на берегу. Что должен сделать рулевой?',
     isMultiple: false,
-    image: '/assets/images/20.png',
+    image: 'assets/images/20.png',
     answers: [
       {
         textPl: 'Skierować się w stronę lewego brzegu',
@@ -1293,7 +1293,7 @@ export const data: Question[] = [
       'Przed wpłynięciem do kanału sternik zauważyl poniższy znak. Co on oznacza?',
     textRu:
       'Перед выходом в канал, рулевой заметил знак ниже. Что он означает?',
-    image: '/assets/images/56.png',
+    image: 'assets/images/56.png',
     answers: [
       {
         textPl: 'Nakaz zachowania szczególnej ostrożności',
@@ -1315,7 +1315,7 @@ export const data: Question[] = [
   {
     textPl: 'Co oznacza znak zamieszczony poniżej?',
     textRu: 'Что означает знак ниже?',
-    image: '/assets/images/57.png',
+    image: 'assets/images/57.png',
     answers: [
       {
         textPl:
@@ -1912,7 +1912,7 @@ export const data: Question[] = [
   {
     textPl: 'Jaki rodzaj miecz obrazuje rysunek obok?',
     textRu: 'Какой тип шверта показан на рисунке?  ',
-    image: '/assets/images/84.png',
+    image: 'assets/images/84.png',
     answers: [
       {
         textPl: 'Balastowy,',
@@ -2205,7 +2205,7 @@ export const data: Question[] = [
   {
     textPl: 'Na rysunku przedstawiony jest znak:',
     textRu: 'На рисунке представлен знак:',
-    image: '/assets/images/97.png',
+    image: 'assets/images/97.png',
     answers: [
       {
         textPl: 'Wschodni znak kardynalny',
@@ -2227,7 +2227,7 @@ export const data: Question[] = [
   {
     textPl: 'Znak na rysunku mówi nam, że niebezpieczeństwo znajduje się na:',
     textRu: 'Знак на рисунке говорит о том, что опасность находится:',
-    image: '/assets/images/98.png',
+    image: 'assets/images/98.png',
     answers: [
       {
         textPl: 'Wschód od znaku',
@@ -2951,7 +2951,7 @@ export const data: Question[] = [
   {
     textPl: 'Na brzegu widnieje taki znak. Co on oznacza:',
     textRu: 'На берегу виден такой знак. Что он означает?',
-    image: '/assets/images/131.png',
+    image: 'assets/images/131.png',
     answers: [
       {
         textPl:
@@ -2978,7 +2978,7 @@ export const data: Question[] = [
     textPl:
       'Na brzegu zaobserwowano znak jak na rysunku. Jak należy się zachować?',
     textRu: 'На берегу замечен следующий знак. Как нужно себя вести?',
-    image: '/assets/images/132.png',
+    image: 'assets/images/132.png',
     answers: [
       {
         textPl:
@@ -3002,7 +3002,7 @@ export const data: Question[] = [
   {
     textPl: 'Zaobserwowano znak przedstawiony na rysunku. Co on oznacza?',
     textRu: 'Замечен следующий знак. Что он означает?',
-    image: '/assets/images/133.png',
+    image: 'assets/images/133.png',
     answers: [
       {
         textPl: 'Nakaz zachowania szczególnej ostrożności',
@@ -3024,7 +3024,7 @@ export const data: Question[] = [
   {
     textPl: 'Co oznacza ten znak?',
     textRu: 'Что означает этот знак?',
-    image: '/assets/images/134.png',
+    image: 'assets/images/134.png',
     answers: [
       {
         textPl: 'Nakaz żeglugi tylko z jednym żaglem',
@@ -3046,7 +3046,7 @@ export const data: Question[] = [
   {
     textPl: 'Zaobserwowała znak oznacza:',
     textRu: 'Наблюдаемый знак обозначает:',
-    image: '/assets/images/135.png',
+    image: 'assets/images/135.png',
     answers: [
       {
         textPl: 'Uwaga, przeszkoda podwodna',
@@ -3070,7 +3070,7 @@ export const data: Question[] = [
       'Jacht o długości 8 m i wysokości masztu 14 m wpływa do kanału. Na brzegu ustawione są znaki. Co należy zrobić?',
     textRu:
       'Яхта длиной 8 м и высотой мачты 14 м входит в канал. На берегу есть указатели. Как следует поступить?',
-    image: '/assets/images/136.png',
+    image: 'assets/images/136.png',
     answers: [
       {
         textPl: 'Nie ma przeszkód, płynąć dalej',
@@ -3094,7 +3094,7 @@ export const data: Question[] = [
       'Z jachtu o wysokości masztu 8 m, szerokości 3 m i zanurzeniu 1 m, zaobserwowano przy wejściu do kanału tablice jak na rysunku. Jak należy postąpić?',
     textRu:
       'С яхты с высотой мачты 8 м, шириной 3 м и осадкой 1 м у входа в канал был замечен такой знак, как показано на рисунке. Как поступить?',
-    image: '/assets/images/137.png',
+    image: 'assets/images/137.png',
     answers: [
       {
         textPl: 'Nie da się przejść, należy zawrócić',
