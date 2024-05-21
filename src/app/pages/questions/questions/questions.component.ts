@@ -14,7 +14,7 @@ import { TranslateModule } from '@ngx-translate/core';
   ],
   templateUrl: './questions.component.html',
   styleUrls: ['./questions.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.Default,
 })
 export class QuestionsComponent {
   constructor(public quizService: QuizService) {}

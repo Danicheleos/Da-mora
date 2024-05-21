@@ -5,10 +5,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { Question } from 'src/app/core/interfaces/question.interface';
 import { QuizService } from 'src/app/core/services/quiz.service';
-import {MatRadioModule} from '@angular/material/radio';
+import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonModule } from '@angular/material/button';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { QuestionComponent } from '../../questions/question/question.component';
+import { Subscription } from 'rxjs';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-quiz',
@@ -22,6 +24,7 @@ import { QuestionComponent } from '../../questions/question/question.component';
     MatButtonModule,
     MatListModule,
     MatRadioModule,
+    RouterModule,
     QuestionComponent
   ],
   templateUrl: './quiz.component.html',
@@ -33,23 +36,50 @@ export class QuizComponent implements OnInit {
   public questions: Question[] = [];
   public currentQuestionIndex: number = 0;
 
+  isInfinite: boolean = false;
+
   public showResults = false;
   public result: number = 0;
+  public usedField: 'textRu' | 'textPl' = 'textPl';
+  private subscription$: Subscription | null = null;
 
-  constructor (private quizService: QuizService) {}
+  get allowToComplete() {
+    return this.questions.every(question => question.answered !== undefined);
+  }
+
+  constructor (private quizService: QuizService, private translateService: TranslateService, private router: ActivatedRoute) {}
 
   ngOnInit(): void {
+    this.isInfinite = !!this.router.snapshot.routeConfig?.path?.includes('infinite');
+    this.usedField = this.translateService.currentLang === 'pl' ? 'textPl' : 'textRu';
+    this.subscription$ = this.translateService.onLangChange.subscribe(lang => {
+      this.usedField = lang.lang === 'pl' ? 'textPl' : 'textRu';
+    });
     this.startQuiz();
+  }
+
+  ngOnDestroy(): void {
+    this.subscription$?.unsubscribe();
   }
 
   public startQuiz(): void {
     this.showResults = false;
     this.currentQuestionIndex = 0;
-    this.questions = this.quizService.combineQuiz();
+    this.questions = this.isInfinite ? this.quizService.combineInfiniteQuiz() : this.quizService.combineQuiz();
     this.currentQuestion = this.questions[this.currentQuestionIndex];
   }
 
+  public select(index: number): void {
+    if (!this.currentQuestion) return;
+    this.currentQuestion.answered = index;
+    setTimeout(() => this.nextQuestion(), this.isInfinite ? 1500 : 0);
+  }
+
   public nextQuestion(): void {
+    if (this.currentQuestionIndex + 1 === this.questions.length) { 
+      this.complete();
+      return;
+    }
     this.currentQuestionIndex++;
     this.currentQuestion = this.questions[this.currentQuestionIndex];
   }
@@ -60,6 +90,11 @@ export class QuizComponent implements OnInit {
   }
 
   public complete(): void {
+    if (this.isInfinite) {
+      this.startQuiz();
+      return;
+    }
+    if (!this.allowToComplete) return;
     this.showResults = true;
     this.result = this.questions.reduce((acc, question) => {
       if (question.answered !== undefined) {
@@ -67,9 +102,5 @@ export class QuizComponent implements OnInit {
       }
       return acc;
     }, 0)
-  }
-
-  get allowToComplete() {
-    return this.questions.every(question => question.answered !== undefined);
   }
 }

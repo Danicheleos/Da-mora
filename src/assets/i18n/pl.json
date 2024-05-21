@@ -3,6 +3,7 @@
     "main": "Głowna",
     "language": "Język",
     "quiz": "Quiz",
+    "infinite": "Nieskończony quiz",
     "questions": "Pytania",
     "history": "Historia",
     "prev": "Powrót",

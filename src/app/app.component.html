@@ -3,7 +3,7 @@
     {{'global.main' | translate}}
   </div>
   <div class="language">
-    <mat-select value="ru" (valueChange)="changeLang($event)">
+    <mat-select [value]="translate.currentLang" (valueChange)="changeLang($event)">
       <mat-option value="ru"> RU </mat-option>
       <mat-option value="pl"> PL </mat-option>
     </mat-select>

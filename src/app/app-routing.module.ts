@@ -17,6 +17,10 @@ const routes: Routes = [
     path: 'quiz',
     component: QuizComponent,
   },
+  {
+    path: 'infinite',
+    component: QuizComponent,
+  },
   { path: '**', redirectTo: '/main', pathMatch: 'full' },
 ];
 

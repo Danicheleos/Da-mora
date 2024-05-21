@@ -9,15 +9,53 @@ mat-card {
 
   mat-card-header {
     border-bottom: 1px solid rgba(96, 96, 96, 0.307);
+
+    mat-card-subtitle {
+      img {
+        height: 100px;
+        width: auto;
+      }
+    }
   }
 
-  mat-card-content {
+  mat-card-content mat-radio-group{
+    margin: 10px 0;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     .answer {
-      &:not(:last-child) {
-        border-bottom: 1px solid black;
+      background-color: rgba(95, 95, 95, 0.1);
+      border-radius: 15px;
+
+      &.correct {
+        background-color: aquamarine !important;
+      }
+
+      &.selected {
+        background-color: #97b8ff38;
+      }
+
+      &:hover {
+        background-color: #97b8ff68;
+      }
+
+      ::ng-deep .mdc-radio {
+        display: none;
+      }
+
+      ::ng-deep mat-radio-button {
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 5px 5px;
+
+        * {
+          cursor: pointer;
+          width: 100%;
+          height: 100%;
+          user-select: none
+        }
       }
     }
   }
