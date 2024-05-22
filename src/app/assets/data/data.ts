@@ -152,7 +152,7 @@ export const data: Question[] = [
       {
         textPl: 'Statek mechaniczny',
         textRu:
-          'Судном моторным,с. судном моторным, но только когда двигатель работает',
+          'Судном моторным',
         correct: true,
       },
       {
@@ -836,12 +836,12 @@ export const data: Question[] = [
       {
         textPl: 'Powyżej 4 mil',
         textRu: 'Дальше 4 миль',
-        correct: true,
+        correct: false,
       },
       {
         textPl: 'Do 2 mil',
         textRu: 'До 2 миль',
-        correct: false,
+        correct: true,
       },
       {
         textPl: 'Do 1 mil',
@@ -987,7 +987,7 @@ export const data: Question[] = [
         correct: false,
       },
       {
-        textPl: 'Możn',
+        textPl: 'Można',
         textRu: 'Можно',
         correct: true,
       },

@@ -43,8 +43,8 @@ mat-card {
 
     mat-card-subtitle {
       img {
-        height: 100px;
-        width: auto;
+        max-height: 100px;
+        max-width: 100%;
       }
     }
   }
