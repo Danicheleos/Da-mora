@@ -1,3 +1,12 @@
+<div class="progress" *ngIf="!showResults">
+  <div class="point"
+       [class.active]="index === currentQuestionIndex"
+       [class.answered]="question.answered !== undefined"
+       *ngFor="let question of questions; let index = index"
+       (click)="currentQuestionIndex = index; currentQuestion = question">
+  </div>
+</div>
+
 <mat-card *ngIf="currentQuestion && !showResults">
   <mat-card-header>
     <mat-card-title>
@@ -30,4 +39,5 @@
     {{result}}\{{questions.length}}
   </div>
   <app-question *ngFor="let question of questions; let index = index" [index]="index" [question]="question"></app-question>
+  <button class="rerun" mat-button (click)="startQuiz()" color="primary">{{'global.restart' | translate}}</button>
 </div>
