@@ -1182,18 +1182,18 @@ export const data: Question[] = [
       'Какая температура охлаждения внутренних органов может привести к глубокому переохлаждению, ведущему к биологической смерти?',
     answers: [
       {
-        textPl: '350C',
-        textRu: '350C',
+        textPl: '35°C',
+        textRu: '35°C',
         correct: false,
       },
       {
-        textPl: '330C',
-        textRu: '330C',
+        textPl: '33°C',
+        textRu: '33°C',
         correct: false,
       },
       {
-        textPl: '22-270C',
-        textRu: '22-270C',
+        textPl: '22-27°C',
+        textRu: '22-27°C',
         correct: true,
       },
     ],
