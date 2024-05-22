@@ -8,6 +8,12 @@ mat-card {
 
   mat-card-header {
     border-bottom: 1px solid rgba(96, 96, 96, 0.307);
+    mat-card-subtitle {
+      img {
+        max-height: 100px;
+        max-width: 100%;
+      }
+    }
   }
 
   mat-card-content {
@@ -21,13 +27,13 @@ mat-card {
       padding: 5px 10px;
 
       &.correct {
-        background-color: aquamarine !important; 
+        background-color: aquamarine !important;
       }
 
       &.answered {
         background-color: #97b8ff68;
       }
-      
+
     }
   }
 
