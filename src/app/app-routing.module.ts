@@ -21,7 +21,7 @@ const routes: Routes = [
     path: 'infinite',
     component: QuizComponent,
   },
-  { path: '**', redirectTo: '/main', pathMatch: 'full' },
+  { path: '**', redirectTo: '/', pathMatch: 'full' },
 ];
 
 @NgModule({
