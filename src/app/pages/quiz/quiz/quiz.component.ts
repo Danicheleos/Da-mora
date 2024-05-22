@@ -40,6 +40,7 @@ export class QuizComponent implements OnInit {
 
   public showResults = false;
   public result: number = 0;
+  public waiting = false;
   public usedField: 'textRu' | 'textPl' = 'textPl';
   private subscription$: Subscription | null = null;
 
@@ -70,14 +71,17 @@ export class QuizComponent implements OnInit {
   }
 
   public select(index: number): void {
-    if (!this.currentQuestion) return;
+    if (!this.currentQuestion || this.waiting) return;
+    this.waiting = true;
     this.currentQuestion.answered = index;
-    setTimeout(() => this.nextQuestion(), this.isInfinite ? 1500 : 200);
+    setTimeout(() => {
+      this.waiting = false;
+      this.nextQuestion();
+    }, this.isInfinite ? 1500 : 200);
   }
 
   public nextQuestion(): void {
     if (this.currentQuestionIndex + 1 === this.questions.length) { 
-      this.complete();
       return;
     }
     this.currentQuestionIndex++;

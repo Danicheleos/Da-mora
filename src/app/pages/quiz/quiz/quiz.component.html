@@ -1,4 +1,4 @@
-<div class="progress" *ngIf="!showResults">
+<div class="progress" *ngIf="!showResults && !isInfinite">
   <div class="point"
        [class.active]="index === currentQuestionIndex"
        [class.answered]="question.answered !== undefined"
@@ -25,10 +25,6 @@
     </mat-radio-group>
   </mat-card-content>
   <mat-card-footer *ngIf="!isInfinite">
-    <div>
-      <button mat-button (click)="prevQuestion()" color="primary" [disabled]="currentQuestionIndex <= 0">{{'global.prev' | translate}}</button>
-      <button mat-button (click)="nextQuestion()" color="primary" [disabled]="currentQuestionIndex + 1 >= questions.length">{{'global.next' | translate}}</button>
-    </div>
     <button mat-button (click)="complete()" color="primary" [disabled]="!allowToComplete">{{'global.complete' | translate}}</button>
   </mat-card-footer>
 </mat-card>
