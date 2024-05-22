@@ -108,7 +108,7 @@ export const data: Question[] = [
       {
         textPl:
           'Informuje nas o niebezpieczeństwach znajdujących się od północnej strony, znak omijamy od południa',
-        textRu: 'Информирует нас об опасности с севера, знак обойти c юга,',
+        textRu: 'Информирует нас об опасности с севера, знак обойти c юга',
         correct: false,
       },
       {
@@ -611,9 +611,9 @@ export const data: Question[] = [
     answers: [
       {
         textPl:
-          'Szkwał oznacza nagły wzrost prędkości wiatru z możliwością zmiany kierunku  nawet o 180О',
+          'Szkwał oznacza nagły wzrost prędkości wiatru z możliwością zmiany kierunku  nawet o 180°',
         textRu:
-          'Шквал означает внезапное увеличение скорости ветра с возможностью смены направления до 180О',
+          'Шквал означает внезапное увеличение скорости ветра с возможностью смены направления до 180°',
         correct: true,
       },
       {
@@ -702,7 +702,7 @@ export const data: Question[] = [
   },
   {
     textPl: 'Griby meteorologiczne to:',
-    textRu: 'Метеорологические GRIB’ы это:',
+    textRu: 'Метеорологические GRIB\'ы это:',
     isMultiple: false,
     answers: [
       {
@@ -1247,8 +1247,8 @@ export const data: Question[] = [
     textRu: 'Ферхолунг - это манёвр:',
     answers: [
       {
-        textPl: 'Obrócenia jachtu o 1800',
-        textRu: 'Разворот яхты на 1800',
+        textPl: 'Obrócenia jachtu o 180°',
+        textRu: 'Разворот яхты на 180°',
         correct: false,
       },
       {
@@ -1445,7 +1445,7 @@ export const data: Question[] = [
         correct: false,
       },
       {
-        textPl: 'Latwiejsze wyciagnięcie czlowieka ',
+        textPl: 'Latwiejsze wyciagnięcie czlowieka',
         textRu: 'Облегчение подъема человека из воды',
         correct: false,
       },
@@ -1734,7 +1734,7 @@ export const data: Question[] = [
         correct: false,
       },
       {
-        textPl: '601 100 300 i 994 szlak WJM i j. Jeziorak',
+        textPl: '601 100 300 i 994 szlak WJM i j. Jeziorak',
         textRu: '601 100 300',
         correct: false,
       },
@@ -1746,12 +1746,12 @@ export const data: Question[] = [
     textRu: 'Швертботы с камерами плавучести входят в группу лодок:',
     answers: [
       {
-        textPl: 'Wywracalnych, ale niezatapialnych,',
+        textPl: 'Wywracalnych, ale niezatapialnych',
         textRu: 'Опрокидывающихся, но непотопляемых',
         correct: true,
       },
       {
-        textPl: 'Wywracalnych i zatapialnych,',
+        textPl: 'Wywracalnych i zatapialnych',
         textRu: 'Опрокидывающихся и погружающихся',
         correct: false,
       },
@@ -1767,12 +1767,12 @@ export const data: Question[] = [
     textRu: 'Тримаран – это яхта, состоящая из:',
     answers: [
       {
-        textPl: 'Dwóch kadłubów,',
+        textPl: 'Dwóch kadłubów',
         textRu: 'Двух корпусов',
         correct: false,
       },
       {
-        textPl: 'Trzech kadłubów,',
+        textPl: 'Trzech kadłubów',
         textRu: 'Трех корпусов',
         correct: true,
       },
@@ -1788,12 +1788,12 @@ export const data: Question[] = [
     textRu: 'Что такое бакиста?',
     answers: [
       {
-        textPl: 'Jest to miejsce w którym przechowujemy osprzęt,',
+        textPl: 'Jest to miejsce w którym przechowujemy osprzęt',
         textRu: 'Место для хранения вещей',
         correct: true,
       },
       {
-        textPl: 'Jest to dziobowy przedział sypialny,',
+        textPl: 'Jest to dziobowy przedział sypialny',
         textRu: 'Спальный отсек в носу лодки',
         correct: false,
       },
@@ -1809,12 +1809,12 @@ export const data: Question[] = [
     textRu: 'Трюм это:',
     answers: [
       {
-        textPl: 'Pomieszczenie dziobowe,',
+        textPl: 'Pomieszczenie dziobowe',
         textRu: 'Носовая каюта',
         correct: false,
       },
       {
-        textPl: 'Podłoga na jachcie,',
+        textPl: 'Podłoga na jachcie',
         textRu: 'Пол на яхте',
         correct: false,
       },
@@ -1830,12 +1830,12 @@ export const data: Question[] = [
     textRu: 'Киль это:',
     answers: [
       {
-        textPl: 'Część masztu,',
+        textPl: 'Część masztu',
         textRu: 'Часть мачты',
         correct: false,
       },
       {
-        textPl: 'Główny element konstrukcji wzdłużnej jachtu,',
+        textPl: 'Główny element konstrukcji wzdłużnej jachtu',
         textRu: 'Главный элемент продольной конструкции яхты',
         correct: true,
       },
@@ -1851,12 +1851,12 @@ export const data: Question[] = [
     textRu: 'Швертовый колодец это:',
     answers: [
       {
-        textPl: 'Element łączący pokładnik ze wzdłużnikiem,',
+        textPl: 'Element łączący pokładnik ze wzdłużnikiem',
         textRu: 'Элемент, соединяющий балку с фермой',
         correct: false,
       },
       {
-        textPl: 'Zwyczajowe miejsce przechowywania broni białej,',
+        textPl: 'Zwyczajowe miejsce przechowywania broni białej',
         textRu: 'Обычное место хранения оружия ближнего боя',
         correct: false,
       },
@@ -1872,12 +1872,12 @@ export const data: Question[] = [
     textRu: 'Основным поперечным конструктивным элементом корпуса является:',
     answers: [
       {
-        textPl: 'Wręgi,',
+        textPl: 'Wręgi',
         textRu: 'Шпангоут',
         correct: true,
       },
       {
-        textPl: 'Stewa,',
+        textPl: 'Stewa',
         textRu: 'Штевень',
         correct: false,
       },
@@ -1893,12 +1893,12 @@ export const data: Question[] = [
     textRu: 'Края гика это:',
     answers: [
       {
-        textPl: 'Pięta i top,',
+        textPl: 'Pięta i top',
         textRu: 'Пятка и топ',
         correct: false,
       },
       {
-        textPl: 'Nok i pięta,',
+        textPl: 'Nok i pięta',
         textRu: 'Нок и пятка',
         correct: true,
       },
@@ -1911,16 +1911,16 @@ export const data: Question[] = [
   },
   {
     textPl: 'Jaki rodzaj miecz obrazuje rysunek obok?',
-    textRu: 'Какой тип шверта показан на рисунке?  ',
+    textRu: 'Какой тип шверта показан на рисунке? ',
     image: 'assets/images/84.png',
     answers: [
       {
-        textPl: 'Balastowy,',
+        textPl: 'Balastowy',
         textRu: 'Балластный',
         correct: false,
       },
       {
-        textPl: 'Szybrowy,',
+        textPl: 'Szybrowy',
         textRu: 'Осевой',
         correct: true,
       },
@@ -1938,12 +1938,12 @@ export const data: Question[] = [
       'Элемент стоячего такелажа, который идёт от топа мачты до носа это:',
     answers: [
       {
-        textPl: 'Wanta,',
+        textPl: 'Wanta',
         textRu: 'Ванта',
         correct: false,
       },
       {
-        textPl: 'Achtersztag,',
+        textPl: 'Achtersztag',
         textRu: 'Ахтерштаг',
         correct: false,
       },
@@ -1961,12 +1961,12 @@ export const data: Question[] = [
       'Верёвка, вшитая  в лик паруса, которая предотвращает растяжение ткани и служит вспомогательным средством при креплении паруса:',
     answers: [
       {
-        textPl: 'Reflina,',
+        textPl: 'Reflina',
         textRu: 'Риф-шкентель',
         correct: false,
       },
       {
-        textPl: 'Halslina,',
+        textPl: 'Halslina',
         textRu: 'Галс-линь',
         correct: false,
       },
@@ -1982,12 +1982,12 @@ export const data: Question[] = [
     textRu: 'Элементами стоячего такелажа являются:',
     answers: [
       {
-        textPl: 'Sztag i topenanta,',
+        textPl: 'Sztag i topenanta',
         textRu: 'Штаг и топенант',
         correct: false,
       },
       {
-        textPl: 'Sztag i stenwanta,',
+        textPl: 'Sztag i stenwanta',
         textRu: 'Штаг и стень-ванта',
         correct: true,
       },
@@ -2003,12 +2003,12 @@ export const data: Question[] = [
     textRu: 'Способом крепления паруса не является:',
     answers: [
       {
-        textPl: 'Likszpara,',
+        textPl: 'Likszpara',
         textRu: 'Лик-паз',
         correct: false,
       },
       {
-        textPl: 'Kluza,',
+        textPl: 'Kluza',
         textRu: 'Клюз',
         correct: true,
       },
@@ -2026,12 +2026,12 @@ export const data: Question[] = [
       'Как называется устройство для поднятия и опускания забортного двигателя?',
     answers: [
       {
-        textPl: 'Pantograf,',
+        textPl: 'Pantograf',
         textRu: 'Пантограф',
         correct: true,
       },
       {
-        textPl: 'Podnośnik,',
+        textPl: 'Podnośnik',
         textRu: 'Подъемник',
         correct: false,
       },
@@ -2047,12 +2047,12 @@ export const data: Question[] = [
     textRu: 'Элемент, использующийся для соединения такелажа это:',
     answers: [
       {
-        textPl: 'Kipa,',
+        textPl: 'Kipa',
         textRu: 'Клюз',
         correct: false,
       },
       {
-        textPl: 'Kausza,',
+        textPl: 'Kausza',
         textRu: 'Коуш',
         correct: false,
       },
@@ -2069,12 +2069,12 @@ export const data: Question[] = [
     textRu: 'Какое топливо используется в четырехтактных лодочных моторах?',
     answers: [
       {
-        textPl: 'Czysta benzyna,',
+        textPl: 'Czysta benzyna',
         textRu: 'Чистый бензин',
         correct: true,
       },
       {
-        textPl: 'Benzyna zmieszana z olejem silnikowym,',
+        textPl: 'Benzyna zmieszana z olejem silnikowym',
         textRu: 'Бензин, смешанный с моторным маслом',
         correct: false,
       },
@@ -2091,14 +2091,14 @@ export const data: Question[] = [
     answers: [
       {
         textPl:
-          'Ta, która znajduje się na prawo od statku płynącego w dół rzeki (od źródła do ujścia),',
+          'Ta, która znajduje się na prawo od statku płynącego w dół rzeki (od źródła do ujścia)',
         textRu:
           'Тот, что справа от нижнего по течению судна (от истока до устья)',
         correct: true,
       },
       {
         textPl:
-          'Ta, która znajduje się na prawo od statku płynącego w górę rzeki (od ujścia do źródła),',
+          'Ta, która znajduje się na prawo od statku płynącego w górę rzeki (od ujścia do źródła)',
         textRu:
           'Тот, что справа от корабля, идущего вверх по течению (от устья до истока)',
         correct: false,
@@ -2115,12 +2115,12 @@ export const data: Question[] = [
     textRu: 'Зелёный буй с конусом во внутренних водах означает:',
     answers: [
       {
-        textPl: 'Lewą granicę szlaku żeglownego,',
+        textPl: 'Lewą granicę szlaku żeglownego',
         textRu: 'Левую границу фарватера',
         correct: true,
       },
       {
-        textPl: 'Prawą granicę szlaku żeglownego,',
+        textPl: 'Prawą granicę szlaku żeglownego',
         textRu: 'Правую границу фарватера',
         correct: false,
       },
@@ -2136,12 +2136,12 @@ export const data: Question[] = [
     textRu: 'Красный буй в форме цилиндра означает:',
     answers: [
       {
-        textPl: 'Prawy brzeg,',
+        textPl: 'Prawy brzeg',
         textRu: 'Правый берег',
         correct: false,
       },
       {
-        textPl: 'Zakaz wejścia na szlak żeglowny,',
+        textPl: 'Zakaz wejścia na szlak żeglowny',
         textRu: 'Запрет выхода на судоходный путь',
         correct: false,
       },
@@ -2158,14 +2158,14 @@ export const data: Question[] = [
     answers: [
       {
         textPl:
-          'Jest to budowla hydrotechniczna służąca do ochrony przed falami,',
+          'Jest to budowla hydrotechniczna służąca do ochrony przed falami',
         textRu:
           'Это гидротехническое сооружение, используемое для защиты от волн',
         correct: false,
       },
       {
         textPl:
-          'Jest to budowla hydrotechniczna umożliwiająca jachtom uzupełnianie wody,',
+          'Jest to budowla hydrotechniczna umożliwiająca jachtom uzupełnianie wody',
         textRu:
           'Это гидротехническое сооружение, позволяющее яхтам пополнять запасы воды',
         correct: false,
@@ -2191,7 +2191,7 @@ export const data: Question[] = [
         correct: true,
       },
       {
-        textPl: 'Jaz ',
+        textPl: 'Jaz',
         textRu: 'Плотина',
         correct: false,
       },
@@ -2251,12 +2251,12 @@ export const data: Question[] = [
     textRu: 'Увидев северный кардинальный знак, следует обогнуть его:',
     answers: [
       {
-        textPl: 'Od południa,',
+        textPl: 'Od południa',
         textRu: 'С юга',
         correct: false,
       },
       {
-        textPl: 'Od północy,',
+        textPl: 'Od północy',
         textRu: 'С севера',
         correct: true,
       },
@@ -2272,12 +2272,12 @@ export const data: Question[] = [
     textRu: 'На морской акватории направление фарватера обозначается:',
     answers: [
       {
-        textPl: 'Od strony portu do morza,',
+        textPl: 'Od strony portu do morza',
         textRu: 'Из порта в море',
         correct: false,
       },
       {
-        textPl: 'Od strony morza do portu,',
+        textPl: 'Od strony morza do portu',
         textRu: 'От моря до порта',
         correct: true,
       },
@@ -2293,12 +2293,12 @@ export const data: Question[] = [
     textRu: 'Во время шлюзования нельзя:',
     answers: [
       {
-        textPl: 'Odpychać się od ściany śluzy za pomocą rąk lub nóg,',
+        textPl: 'Odpychać się od ściany śluzy za pomocą rąk lub nóg',
         textRu: 'Отталкиваться от стены шлюза руками или ногами',
         correct: true,
       },
       {
-        textPl: 'Cumować na biegowo,',
+        textPl: 'Cumować na biegowo',
         textRu: 'Заложить швартовую серьгу',
         correct: false,
       },
@@ -2314,12 +2314,12 @@ export const data: Question[] = [
     textRu: 'Торможение паруса производится:',
     answers: [
       {
-        textPl: 'Wyluzowaniu żagli,',
+        textPl: 'Wyluzowaniu żagli',
         textRu: 'Травлением паруса',
         correct: false,
       },
       {
-        textPl: 'Wypchnięciu ich na wiatr,',
+        textPl: 'Wypchnięciu ich na wiatr',
         textRu: 'Перекидыванием их на ветер',
         correct: true,
       },
@@ -2337,13 +2337,13 @@ export const data: Question[] = [
       'Что будет, если включить передачу заднего хода с правым винтом, удерживающим «нулевой» руль:',
     answers: [
       {
-        textPl: 'Jacht ruszy do tyłu, a rufa zostanie odrzucona w prawo,',
+        textPl: 'Jacht ruszy do tyłu, a rufa zostanie odrzucona w prawo',
         textRu:
           'Лодка будет двигаться назад, а корма будет отброшена на правый борт',
         correct: false,
       },
       {
-        textPl: 'Jacht ruszy prosto do tyłu,',
+        textPl: 'Jacht ruszy prosto do tyłu',
         textRu: 'Лодка пойдет прямо за кормой',
         correct: false,
       },
@@ -2359,12 +2359,12 @@ export const data: Question[] = [
     textRu: 'Носовой шпринг на яхте проводится от:',
     answers: [
       {
-        textPl: 'Dziobu jachtu do polera przed jachtem,',
+        textPl: 'Dziobu jachtu do polera przed jachtem',
         textRu: 'От носа яхты на кнехт возле носа яхты',
         correct: false,
       },
       {
-        textPl: 'Dziobu jachtu do polera przy rufie jachtu,',
+        textPl: 'Dziobu jachtu do polera przy rufie jachtu',
         textRu: 'От носа яхты на кнехт позади кормы яхты',
         correct: true,
       },
@@ -2382,12 +2382,12 @@ export const data: Question[] = [
       'Чтобы уравновесить сильную наветренность лодки при порыве ветра, нужно:',
     answers: [
       {
-        textPl: 'Wybrać tylny żagiel,',
+        textPl: 'Wybrać tylny żagiel',
         textRu: 'Выбрать задний парус',
         correct: true,
       },
       {
-        textPl: 'Zrzucić przednie żagle,',
+        textPl: 'Zrzucić przednie żagle',
         textRu: 'Скрутить передний парус',
         correct: false,
       },
@@ -2403,12 +2403,12 @@ export const data: Question[] = [
     textRu: 'Объясните понятие подветренности яхты:',
     answers: [
       {
-        textPl: 'Jest to tendencja jachtu do samoistnego ostrzenia,',
+        textPl: 'Jest to tendencja jachtu do samoistnego ostrzenia',
         textRu: 'Это склонность лодки приводить себя самостоятельно',
         correct: false,
       },
       {
-        textPl: 'Jest to tendencja jachtu do samoistnego odpadania,',
+        textPl: 'Jest to tendencja jachtu do samoistnego odpadania',
         textRu: 'Это склонность лодки уваливать себя самостоятельно',
         correct: true,
       },
@@ -2425,13 +2425,13 @@ export const data: Question[] = [
     answers: [
       {
         textPl:
-          'Lewa burta jest burtą nawietrzną, żagle układają się na prawej burcie,',
+          'Lewa burta jest burtą nawietrzną, żagle układają się na prawej burcie',
         textRu:
           'Левый борт - наветренная сторона, паруса расположены на правом борту',
         correct: false,
       },
       {
-        textPl: 'Jacht płynie w prawą stronę,',
+        textPl: 'Jacht płynie w prawą stronę',
         textRu: 'Яхта идёт вправо',
         correct: false,
       },
@@ -2450,14 +2450,14 @@ export const data: Question[] = [
     answers: [
       {
         textPl:
-          'Przenieść balast na burtę zawietrzną, wybrać maksymalnie żagle, odpaść od wiatru,',
+          'Przenieść balast na burtę zawietrzną, wybrać maksymalnie żagle, odpaść od wiatru',
         textRu:
           'Переместить вес на подветренную сторону, максимально поднять паруса, увалиться от ветра',
         correct: false,
       },
       {
         textPl:
-          'Przenieść balast na burtę nawietrzną, luzować żagle, ostrzyć, refować żagle,',
+          'Przenieść balast na burtę nawietrzną, luzować żagle, ostrzyć, refować żagle',
         textRu:
           'Переместить вес на наветренную сторону, потравить паруса, привестись, зарифовать паруса',
         correct: true,
@@ -2474,12 +2474,12 @@ export const data: Question[] = [
     textRu: 'Сила тяги паруса увеличивается при:',
     answers: [
       {
-        textPl: 'Zwiększenia przechyłu jachtu,',
+        textPl: 'Zwiększenia przechyłu jachtu',
         textRu: 'Увеличении крена яхты',
         correct: false,
       },
       {
-        textPl: 'Zmniejszenia przechyłu przez balastowanie jachtu,',
+        textPl: 'Zmniejszenia przechyłu przez balastowanie jachtu',
         textRu: 'Уменьшению крена с помощью откренивая',
         correct: true,
       },
@@ -2495,12 +2495,12 @@ export const data: Question[] = [
     textRu: 'Поднятие пера руля на 45° приведет к',
     answers: [
       {
-        textPl: 'Polepszenie sterowności,',
+        textPl: 'Polepszenie sterowności',
         textRu: 'Улучшению управляемости',
         correct: false,
       },
       {
-        textPl: 'Pogorszenie sterowności,',
+        textPl: 'Pogorszenie sterowności',
         textRu: 'Ухудшению управляемости',
         correct: true,
       },
@@ -2516,12 +2516,12 @@ export const data: Question[] = [
     textRu: 'Западный ветер дует:',
     answers: [
       {
-        textPl: 'Z zachodu,',
+        textPl: 'Z zachodu',
         textRu: 'С запада',
         correct: true,
       },
       {
-        textPl: 'Na zachód,',
+        textPl: 'Na zachód',
         textRu: 'На запад',
         correct: false,
       },
@@ -2537,12 +2537,12 @@ export const data: Question[] = [
     textRu: 'Дневной бриз на озере дует в сторону:',
     answers: [
       {
-        textPl: 'Od jeziora do jego brzegu,',
+        textPl: 'Od jeziora do jego brzegu',
         textRu: 'От озера до его берега',
         correct: true,
       },
       {
-        textPl: 'Od brzegów jeziora do jego środka,',
+        textPl: 'Od brzegów jeziora do jego środka',
         textRu: 'От берегов озера к его центру',
         correct: false,
       },
@@ -2559,12 +2559,12 @@ export const data: Question[] = [
       'Продолжительные дожди не очень сильной интенсивности предвещают облака:',
     answers: [
       {
-        textPl: 'Cirrus i cirrostratus,',
+        textPl: 'Cirrus i cirrostratus',
         textRu: 'Cirrus и cirrostratus (перистые и перисто-кучевые)',
         correct: false,
       },
       {
-        textPl: 'Cumulus i cumulonimbus,',
+        textPl: 'Cumulus i cumulonimbus',
         textRu: 'Cumulus и cumulonimbus (кучевые и кучево-дождевые)',
         correct: false,
       },
@@ -2580,12 +2580,12 @@ export const data: Question[] = [
     textRu: 'Единицей атмосферного давления является:',
     answers: [
       {
-        textPl: 'Lux,',
+        textPl: 'Lux',
         textRu: 'Люкс',
         correct: false,
       },
       {
-        textPl: 'Hektopaskal,',
+        textPl: 'Hektopaskal',
         textRu: 'Гектопаскаль',
         correct: true,
       },
@@ -2601,12 +2601,12 @@ export const data: Question[] = [
     textRu: 'Диапазон шкалы Бофорта составляет:',
     answers: [
       {
-        textPl: '0°- 9 °,',
+        textPl: '0°- 9 °',
         textRu: '0°- 9°',
         correct: false,
       },
       {
-        textPl: '0°- 10°,',
+        textPl: '0°- 10°',
         textRu: '0°- 10°',
         correct: false,
       },
@@ -2623,13 +2623,13 @@ export const data: Question[] = [
     answers: [
       {
         textPl:
-          'Zmienia kierunek na przeciwny do wiatru rzeczywistego – na dopychający do brzegu,',
+          'Zmienia kierunek na przeciwny do wiatru rzeczywistego – na dopychający do brzegu',
         textRu:
           'Меняет направление на противоположное истинному ветру - на оттеснение к берегу',
         correct: true,
       },
       {
-        textPl: 'Zmienia kierunek na równoległy do brzegu,',
+        textPl: 'Zmienia kierunek na równoległy do brzegu',
         textRu: 'Меняет направление на параллельное берегу',
         correct: false,
       },
@@ -2645,12 +2645,12 @@ export const data: Question[] = [
     textRu: 'Более безопасная якорная стоянка на озере находится:',
     answers: [
       {
-        textPl: 'Po stronie zawietrznej wyspy,',
+        textPl: 'Po stronie zawietrznej wyspy',
         textRu: 'На подветренной стороне острова',
         correct: true,
       },
       {
-        textPl: 'Po stronie nawietrznej wyspy,',
+        textPl: 'Po stronie nawietrznej wyspy',
         textRu: 'На наветренной стороне острова',
         correct: false,
       },
@@ -2666,17 +2666,17 @@ export const data: Question[] = [
     textRu: 'Скорость ветра зависит от:',
     answers: [
       {
-        textPl: 'Różnicy ciśnień między dwoma punktami,',
+        textPl: 'Różnicy ciśnień między dwoma punktami',
         textRu: 'Разницы давлений между двумя точками',
         correct: true,
       },
       {
-        textPl: 'Wielkości jachtu,',
+        textPl: 'Wielkości jachtu',
         textRu: 'Размера яхты',
         correct: false,
       },
       {
-        textPl: 'Wielkości barometru,',
+        textPl: 'Wielkości barometru',
         textRu: 'Размера барометра',
         correct: false,
       },
@@ -2687,12 +2687,12 @@ export const data: Question[] = [
     textRu: 'Шквал – это:',
     answers: [
       {
-        textPl: 'Część dziobowa jachtu balastowego,',
+        textPl: 'Część dziobowa jachtu balastowego',
         textRu: 'Носовая часть балластной яхты',
         correct: false,
       },
       {
-        textPl: 'Nagły silny podmuch,',
+        textPl: 'Nagły silny podmuch',
         textRu: 'Внезапный сильный порыв ветра',
         correct: true,
       },
@@ -2708,12 +2708,12 @@ export const data: Question[] = [
     textRu: 'В зоне повышенного давления дуют ветры:',
     answers: [
       {
-        textPl: 'Od środka układu na zewnątrz,',
+        textPl: 'Od środka układu na zewnątrz',
         textRu: 'Из центра системы наружу',
         correct: true,
       },
       {
-        textPl: 'Do środka układu,',
+        textPl: 'Do środka układu',
         textRu: 'К центру системы',
         correct: false,
       },
@@ -2733,12 +2733,12 @@ export const data: Question[] = [
       'Один длинный звуковой сигнал с судна на внутреннем водном пути означает:',
     answers: [
       {
-        textPl: 'Uwaga,',
+        textPl: 'Uwaga',
         textRu: 'Обратить внимание',
         correct: true,
       },
       {
-        textPl: 'Moje maszyny pracują wstecz,',
+        textPl: 'Moje maszyny pracują wstecz',
         textRu: 'Двигатель работает реверсом',
         correct: false,
       },
@@ -2775,12 +2775,12 @@ export const data: Question[] = [
     textRu: 'Перевернутый черный конус, свисающий с штага означает:',
     answers: [
       {
-        textPl: 'Pojedynczy mały statek w ruchu,',
+        textPl: 'Pojedynczy mały statek w ruchu',
         textRu: 'Один небольшой корабль в движении',
         correct: false,
       },
       {
-        textPl: 'Statek płynący jednocześnie na żaglach i na silniku,',
+        textPl: 'Statek płynący jednocześnie na żaglach i na silniku',
         textRu: 'Судно, идущее под парусами и двигателем одновременно',
         correct: true,
       },
@@ -2796,12 +2796,12 @@ export const data: Question[] = [
     textRu: 'Черный шар, свисающий с носа яхты, означает:',
     answers: [
       {
-        textPl: 'Statek płynący jednocześnie na żaglach i na silniku,',
+        textPl: 'Statek płynący jednocześnie na żaglach i na silniku',
         textRu: 'Судно, идущее под парусами и двигателем одновременно',
         correct: false,
       },
       {
-        textPl: 'Pojedynczy mały statek w ruchu,',
+        textPl: 'Pojedynczy mały statek w ruchu',
         textRu: 'Один небольшой корабль в движении',
         correct: false,
       },
@@ -2818,14 +2818,14 @@ export const data: Question[] = [
     answers: [
       {
         textPl:
-          'W kursie bajdewind wykonasz zwrot przez sztag bez luzowania foka,',
+          'W kursie bajdewind wykonasz zwrot przez sztag bez luzowania foka',
         textRu:
           'На курсе бейдевинд сделать поворот оверштаг без переброса переднего паруса',
         correct: true,
       },
       {
         textPl:
-          'Z kursu baksztag zrobisz zwrot przez sztag i umocujesz ster do burty,',
+          'Z kursu baksztag zrobisz zwrot przez sztag i umocujesz ster do burty',
         textRu:
           'На курсе бакштаг сделать поворот оверштаг и прикрепить руль к борту',
         correct: false,
@@ -2843,14 +2843,14 @@ export const data: Question[] = [
     textRu: 'Что делать перед тем, как сбросить якорь с носа:',
     answers: [
       {
-        textPl: 'Dla bezpieczeństwa zrzucić foka i przygotować linę kotwiczną,',
+        textPl: 'Dla bezpieczeństwa zrzucić foka i przygotować linę kotwiczną',
         textRu:
           'В целях безопасности опустить передний парус и подготовить якорный канат',
         correct: false,
       },
       {
         textPl:
-          'Płynąć w linii wiatru i poczekać aż jacht zatrzyma się lub zacznie się cofać,',
+          'Płynąć w linii wiatru i poczekać aż jacht zatrzyma się lub zacznie się cofać',
         textRu:
           'Идти по ветру и ждать, пока лодка остановится или начнет двигаться задним ходом',
         correct: false,
@@ -2867,12 +2867,12 @@ export const data: Question[] = [
     textRu: 'С какого борта нужно поднимать человека за бортом на швертботе?',
     answers: [
       {
-        textPl: 'Zawietrzną,',
+        textPl: 'Zawietrzną',
         textRu: 'Подветренной',
         correct: false,
       },
       {
-        textPl: 'Nawietrzną,',
+        textPl: 'Nawietrzną',
         textRu: 'Наветренной',
         correct: true,
       },
@@ -2888,13 +2888,13 @@ export const data: Question[] = [
     textRu: 'Лавировка – это:',
     answers: [
       {
-        textPl: 'Wyciąganie jachtów z hali,',
+        textPl: 'Wyciąganie jachtów z hali',
         textRu: 'Вытягивание яхты с стоянки',
         correct: false,
       },
       {
         textPl:
-          'Przemieszczanie się pod wiatr, na zmianę prawym i lewym bajdewindem,',
+          'Przemieszczanie się pod wiatr, na zmianę prawym i lewym bajdewindem',
         textRu:
           'Движение против ветра, попеременно с правым и левым бейдевиндом',
         correct: true,
@@ -2911,12 +2911,12 @@ export const data: Question[] = [
     textRu: 'Подъем и спуск парусов следует производить:',
     answers: [
       {
-        textPl: 'Pod wiatr,',
+        textPl: 'Pod wiatr',
         textRu: 'Против ветра',
         correct: true,
       },
       {
-        textPl: 'W dowolnym kursie,',
+        textPl: 'W dowolnym kursie',
         textRu: 'На любом курсе',
         correct: false,
       },
@@ -2932,17 +2932,17 @@ export const data: Question[] = [
     textRu: 'Какой сектор освещения у бортового огня судна?',
     answers: [
       {
-        textPl: '112,5 °',
+        textPl: '112,5°',
         textRu: '112,5°',
         correct: true,
       },
       {
-        textPl: '135 °',
+        textPl: '135°',
         textRu: '135°',
         correct: false,
       },
       {
-        textPl: '225 °',
+        textPl: '225°',
         textRu: '225°',
         correct: false,
       },
@@ -3304,7 +3304,7 @@ export const data: Question[] = [
         correct: true,
       },
       {
-        textPl: 'Zabezpieczenie jachtu przed ‘grzybem’',
+        textPl: 'Zabezpieczenie jachtu przed \'grzybem\'',
         textRu: 'Попытка перевернуть яхту обратно',
         correct: false,
       },
