@@ -214,12 +214,12 @@ export const data: Question[] = [
     answers: [
       {
         textPl: 'Wzrost zawietrzności jachtu',
-        textRu: 'Увеличение подветренноcти',
+        textRu: 'Увеличение подветренноcти, яхта уваливается',
         correct: true,
       },
       {
         textPl: 'Wzrost nawietrzności jachtu',
-        textRu: 'Увеличение наветренности',
+        textRu: 'Увеличение наветренности, яхта приводится',
         correct: false,
       },
       {
@@ -313,7 +313,7 @@ export const data: Question[] = [
       {
         textPl: 'Nic nie robić i przeczekać podmuch wiatru',
         textRu: 'Ничего не делать и подождать порыва ветра',
-        correct: false,
+        correct: true,
       },
     ],
   },
@@ -448,7 +448,7 @@ export const data: Question[] = [
       {
         textPl: 'Skierować się w stronę lewego brzegu',
         textRu: 'Направить судно в сторону левого берега',
-        correct: false,
+        correct: true,
       },
       {
         textPl: 'Trzymać się w bezpiecznej odległości od znaku',
@@ -458,7 +458,7 @@ export const data: Question[] = [
       {
         textPl: 'Trzymać się prawego brzegu',
         textRu: 'Держаться правого берега',
-        correct: true,
+        correct: false,
       },
     ],
   },
@@ -754,22 +754,22 @@ export const data: Question[] = [
   {
     textPl:
       'Gdzie w układzie niżowym występuje największe i najmniejsze ciśnienie atmosferyczne?',
-    textRu: 'Где циклон и антициклон в системе низкого давления?',
+    textRu: 'Где в циклонной системе наблюдается самое высокое и самое низкое атмосферное давление?',
     isMultiple: false,
     answers: [
       {
         textPl: 'Najmniejsze w środku a największe na zewnątrz',
-        textRu: 'Циклон в центре, антициклон снаружи',
+        textRu: 'Самое низкое в центре, а самое высокое на периферии',
         correct: true,
       },
       {
         textPl: 'Największe w środku a najmniejsze na zewnątrz',
-        textRu: 'Антициклон в центре, циклон снаружи',
+        textRu: 'Самое высокое в центре, а самое низкое на периферии',
         correct: false,
       },
       {
         textPl: 'W środku i na zewnątrz najmniejsze',
-        textRu: 'Внутри и снаружи низкого давления',
+        textRu: 'Самое низкое в центре и на периферии',
         correct: false,
       },
     ],
@@ -860,7 +860,7 @@ export const data: Question[] = [
       {
         textPl: 'Nie może',
         textRu: 'Не может',
-        correct: false,
+        correct: true,
       },
       {
         textPl: 'Może ale pod warunkiem posiadania silnika spalinowego',
@@ -870,7 +870,7 @@ export const data: Question[] = [
       {
         textPl: 'Мoże',
         textRu: 'Может',
-        correct: true,
+        correct: false,
       },
     ],
   },
@@ -1160,7 +1160,7 @@ export const data: Question[] = [
       {
         textPl: 'Wykonywaniu 30 uciśnięć i 2 oddechów ratowniczyh',
         textRu: 'Выполнении 30 компрессий и 2 искусственных вдохов',
-        correct: false,
+        correct: true,
       },
       {
         textPl:
@@ -1171,7 +1171,7 @@ export const data: Question[] = [
       {
         textPl: 'Wszystkie odpowiedzi są prawidlowe',
         textRu: 'Все ответы верны',
-        correct: true,
+        correct: false,
       },
     ],
   },
@@ -1747,17 +1747,17 @@ export const data: Question[] = [
     answers: [
       {
         textPl: 'Wywracalnych, ale niezatapialnych',
-        textRu: 'Опрокидывающихся, но непотопляемых',
+        textRu: 'Переворачивающихся, но непотопляемых',
         correct: true,
       },
       {
         textPl: 'Wywracalnych i zatapialnych',
-        textRu: 'Опрокидывающихся и погружающихся',
+        textRu: 'Переворачивающихся и затопляемых',
         correct: false,
       },
       {
         textPl: 'Zatapialnych, ale niewywracalnych',
-        textRu: 'Погружающихся, но не опрокидываемых',
+        textRu: 'Затопляемых, но не переворачивающихся',
         correct: false,
       },
     ],
@@ -2093,19 +2093,19 @@ export const data: Question[] = [
         textPl:
           'Ta, która znajduje się na prawo od statku płynącego w dół rzeki (od źródła do ujścia)',
         textRu:
-          'Тот, что справа от нижнего по течению судна (от истока до устья)',
+          'Та, которая находится справа от судна, идущего вниз по реке (от истока к устью)',
         correct: true,
       },
       {
         textPl:
           'Ta, która znajduje się na prawo od statku płynącego w górę rzeki (od ujścia do źródła)',
         textRu:
-          'Тот, что справа от корабля, идущего вверх по течению (от устья до истока)',
+          'Та, которая находится справа от судна, идущего вверх по реке (от устья к истоку)',
         correct: false,
       },
       {
         textPl: 'Ta, która znajduje się północnym lub wschodnim brzegu',
-        textRu: 'Тот, что на северном или восточном берегу',
+        textRu: 'Та, которая находится на северном или восточном берегу',
         correct: false,
       },
     ],
@@ -2384,7 +2384,7 @@ export const data: Question[] = [
       {
         textPl: 'Wybrać tylny żagiel',
         textRu: 'Выбрать задний парус',
-        correct: true,
+        correct: false,
       },
       {
         textPl: 'Zrzucić przednie żagle',
@@ -2394,7 +2394,7 @@ export const data: Question[] = [
       {
         textPl: 'Poluzować tylny żagiel',
         textRu: 'Потравить задний парус',
-        correct: false,
+        correct: true,
       },
     ],
   },
@@ -2625,7 +2625,7 @@ export const data: Question[] = [
         textPl:
           'Zmienia kierunek na przeciwny do wiatru rzeczywistego – na dopychający do brzegu',
         textRu:
-          'Меняет направление на противоположное истинному ветру - на оттеснение к берегу',
+          'Меняет направление на противоположное относительно истинного ветра – становится прижимным ветром',
         correct: true,
       },
       {
