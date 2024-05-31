@@ -303,7 +303,7 @@ export const data: Question[] = [
       {
         textPl: 'Zluzować żagle, wyostrzyć, balastować na burcie nawietrznej',
         textRu: 'Травить паруса, привестись, откренять на наветренном борте',
-        correct: true,
+        correct: false,
       },
       {
         textPl: 'Odpaść do półwiatr i balastować',
