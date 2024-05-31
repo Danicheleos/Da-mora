@@ -57,7 +57,9 @@ export class QuizComponent implements OnInit {
     this.subscription$ = this.translateService.onLangChange.subscribe(lang => {
       this.usedField = lang.lang === 'pl' ? 'textPl' : 'textRu';
     });
-    // this.startQuiz();
+    if (this.isInfinite) {
+      this.startQuiz();
+    }
   }
 
   ngOnDestroy(): void {
