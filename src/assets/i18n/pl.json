@@ -9,6 +9,7 @@
     "prev": "Powrót",
     "next": "Dalej",
     "complete": "Zakończyć",
-    "restart": "Powtórz"
+    "restart": "Powtórz",
+    "questionsNumber": "Wybierz liczbę pytań:"
   }
 }

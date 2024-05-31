@@ -16,8 +16,8 @@ export class QuizService {
     this.dataSource$.next(this.data);
   }
 
-  public combineQuiz(): Question[] {
-    return this.shuffle([...this.dataSource$.value]).slice(0, 10).map(question => {
+  public combineQuiz(count: number): Question[] {
+    return this.shuffle([...this.dataSource$.value]).slice(0, count).map(question => {
       return {
         ...question,
         answers: this.shuffle(question.answers)

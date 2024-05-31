@@ -38,6 +38,7 @@ export class QuizComponent implements OnInit {
 
   isInfinite: boolean = false;
 
+  public questionsNumber: number = 10;
   public showResults = false;
   public result: number = 0;
   public waiting = false;
@@ -56,7 +57,7 @@ export class QuizComponent implements OnInit {
     this.subscription$ = this.translateService.onLangChange.subscribe(lang => {
       this.usedField = lang.lang === 'pl' ? 'textPl' : 'textRu';
     });
-    this.startQuiz();
+    // this.startQuiz();
   }
 
   ngOnDestroy(): void {
@@ -66,7 +67,7 @@ export class QuizComponent implements OnInit {
   public startQuiz(): void {
     this.showResults = false;
     this.currentQuestionIndex = 0;
-    this.questions = this.isInfinite ? this.quizService.combineInfiniteQuiz() : this.quizService.combineQuiz();
+    this.questions = this.isInfinite ? this.quizService.combineInfiniteQuiz() : this.quizService.combineQuiz(this.questionsNumber);
     this.currentQuestion = this.questions[this.currentQuestionIndex];
   }
 
@@ -81,7 +82,7 @@ export class QuizComponent implements OnInit {
   }
 
   public nextQuestion(): void {
-    if (this.currentQuestionIndex + 1 === this.questions.length) { 
+    if (this.currentQuestionIndex + 1 === this.questions.length) {
       return;
     }
     this.currentQuestionIndex++;

@@ -1,39 +1,58 @@
-<div class="progress" *ngIf="!showResults && !isInfinite">
-  <div class="point"
-       [class.active]="index === currentQuestionIndex"
-       [class.answered]="question.answered !== undefined"
-       *ngFor="let question of questions; let index = index"
-       (click)="currentQuestionIndex = index; currentQuestion = question">
-  </div>
-</div>
+<ng-container *ngIf="!questions.length">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        <p>{{'global.questionsNumber' | translate}}</p>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content style="padding-top: 20px; display: flex; justify-content: space-between;">
+      <button mat-button color="primary" (click)="questionsNumber = 10; startQuiz()">10</button>
+      <button mat-button color="primary" (click)="questionsNumber = 25; startQuiz()">25</button>
+      <button mat-button color="primary" (click)="questionsNumber = 50; startQuiz()">50</button>
+      <button mat-button color="primary" (click)="questionsNumber = 75; startQuiz()">75</button>
+      <button mat-button color="primary" (click)="questionsNumber = 100; startQuiz()">100</button>
+    </mat-card-content>
+  </mat-card>
+</ng-container>
 
-<mat-card *ngIf="currentQuestion && !showResults">
-  <mat-card-header>
-    <mat-card-title>
-      <p *ngIf="!isInfinite">{{(currentQuestionIndex + 1) + '/' + (questions.length)}}</p>
-      <p>{{currentQuestion[usedField]}}</p>
-    </mat-card-title>
-    <mat-card-subtitle *ngIf="currentQuestion.image">
-      <img [src]="currentQuestion.image">
-    </mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-content>
-    <mat-radio-group>
-      <div class="answer" (pointerdown)="select(index)" [class.correct]="isInfinite && answer.correct && currentQuestion.answered !== undefined" [class.selected]="currentQuestion.answered === index" *ngFor="let answer of currentQuestion.answers; let index = index">
-        <mat-radio-button [value]="index">{{answer[usedField]}}</mat-radio-button>
-      </div>
-    </mat-radio-group>
-  </mat-card-content>
-  <mat-card-footer *ngIf="!isInfinite">
-    <button mat-button (click)="complete()" color="primary" [disabled]="!allowToComplete">{{'global.complete' | translate}}</button>
-  </mat-card-footer>
-</mat-card>
+<ng-container *ngIf="questions.length">
+  <div class="progress" *ngIf="!showResults && !isInfinite">
+    <div class="point"
+         [class.active]="index === currentQuestionIndex"
+         [class.answered]="question.answered !== undefined"
+         *ngFor="let question of questions; let index = index"
+         (click)="currentQuestionIndex = index; currentQuestion = question">
+    </div>
+  </div>
+
+  <mat-card *ngIf="currentQuestion && !showResults">
+    <mat-card-header>
+      <mat-card-title>
+        <p *ngIf="!isInfinite">{{(currentQuestionIndex + 1) + '/' + (questions.length)}}</p>
+        <p>{{currentQuestion[usedField]}}</p>
+      </mat-card-title>
+      <mat-card-subtitle *ngIf="currentQuestion.image">
+        <img [src]="currentQuestion.image">
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-radio-group>
+        <div class="answer" (pointerdown)="select(index)" [class.correct]="isInfinite && answer.correct && currentQuestion.answered !== undefined" [class.selected]="currentQuestion.answered === index" *ngFor="let answer of currentQuestion.answers; let index = index">
+          <mat-radio-button [value]="index">{{answer[usedField]}}</mat-radio-button>
+        </div>
+      </mat-radio-group>
+    </mat-card-content>
+    <mat-card-footer *ngIf="!isInfinite">
+      <button mat-button (click)="complete()" color="primary" [disabled]="!allowToComplete">{{'global.complete' | translate}}</button>
+    </mat-card-footer>
+  </mat-card>
+</ng-container>
 
 <div class="questions-wrapper" *ngIf="showResults">
-  <button class="rerun" mat-button (click)="startQuiz()" color="primary">{{'global.restart' | translate}}</button>
+  <button class="rerun" mat-button (click)="showResults = false; questions = []" color="primary">{{'global.restart' | translate}}</button>
   <div class="result">
     {{result}}\{{questions.length}}
   </div>
   <app-question *ngFor="let question of questions; let index = index" [index]="index" [question]="question"></app-question>
-  <button class="rerun" mat-button (click)="startQuiz()" color="primary">{{'global.restart' | translate}}</button>
+  <button class="rerun" mat-button (click)="showResults = false; questions = []" color="primary">{{'global.restart' | translate}}</button>
 </div>
