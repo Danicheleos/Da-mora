@@ -1,12 +1,4 @@
-import { Answer, AnswerOld } from './answer.interface';
-
-export interface QuestionOld {
-  text: string;
-  answered?: number;
-  isMultiple?: boolean;
-  image?: string;
-  answers: AnswerOld[];
-}
+import { Answer } from './answer.interface';
 
 export interface Question {
   textPl: string;
