@@ -90,7 +90,7 @@ export const data: Question[] = [
       },
       {
         textPl: 'Wolno parkować od znaku w kierunku prawej strony',
-        textRu: 'Можно швартовать в направлении стороне справа от знака',
+        textRu: 'Можно швартоваться с правой стороны от знака',
         correct: true,
       },
     ],
@@ -129,7 +129,7 @@ export const data: Question[] = [
       },
       {
         textPl: 'Kierownik statku czyli osoba, która jest kapitanem na jachcie',
-        textRu: 'Работник судна, который является капитаном на яхте',
+        textRu: 'Управляющий кораблём - человек, который является капитаном яхты',
         correct: true,
       },
       {
@@ -157,7 +157,7 @@ export const data: Question[] = [
       },
       {
         textPl: 'Statek mechaniczny tylko wtedy gdy silnik pracuje na biegu',
-        textRu: 'Судном моторным, но только когда двигатель работает',
+        textRu: 'Судном моторным, но только когда двигатель работает на передаче',
         correct: false,
       },
     ],
@@ -214,12 +214,12 @@ export const data: Question[] = [
     answers: [
       {
         textPl: 'Wzrost zawietrzności jachtu',
-        textRu: 'Увеличение подветренноcти, яхта уваливается',
+        textRu: 'Увеличение подветренноcти (яхта уваливается)',
         correct: true,
       },
       {
         textPl: 'Wzrost nawietrzności jachtu',
-        textRu: 'Увеличение наветренности, яхта приводится',
+        textRu: 'Увеличение наветренности (яхта приводится)',
         correct: false,
       },
       {
@@ -303,7 +303,7 @@ export const data: Question[] = [
       {
         textPl: 'Zluzować żagle, wyostrzyć, balastować na burcie nawietrznej',
         textRu: 'Травить паруса, привестись, откренять на наветренном борте',
-        correct: false,
+        correct: true,
       },
       {
         textPl: 'Odpaść do półwiatr i balastować',
@@ -313,7 +313,7 @@ export const data: Question[] = [
       {
         textPl: 'Nic nie robić i przeczekać podmuch wiatru',
         textRu: 'Ничего не делать и подождать порыва ветра',
-        correct: true,
+        correct: false,
       },
     ],
   },
@@ -448,7 +448,7 @@ export const data: Question[] = [
       {
         textPl: 'Skierować się w stronę lewego brzegu',
         textRu: 'Направить судно в сторону левого берега',
-        correct: true,
+        correct: false,
       },
       {
         textPl: 'Trzymać się w bezpiecznej odległości od znaku',
@@ -458,7 +458,7 @@ export const data: Question[] = [
       {
         textPl: 'Trzymać się prawego brzegu',
         textRu: 'Держаться правого берега',
-        correct: false,
+        correct: true,
       },
     ],
   },
@@ -731,7 +731,7 @@ export const data: Question[] = [
   {
     textPl: 'Szkwały oraz silne podmuchy wiatru mogą towarzyszyć chmurom:',
     textRu:
-      'Шквалы и порывы ветра могут быть вместе с следующим типом облаков:',
+      'Какой тип облаков могут сопровождать шквалы и порывы ветра:',
     isMultiple: false,
     answers: [
       {
@@ -828,20 +828,20 @@ export const data: Question[] = [
   },
   {
     textPl:
-      'Po wodach morskich, w jakiej odległości od brzegu, żeglarz jachtowy może prowadzić jachtu o długości  do 12 m?',
+      'Po wodach morskich, w jakiej odległości od brzegu, żeglarz jachtowy nie może prowadzić jachtu o długości  do 12 m?',
     textRu:
-      'В морских водах, в какой дальности от берега żeglarz jachtowy может управлять яхтой длиной до 12 метров?',
+      'В морских водах, в какой дальности от берега żeglarz jachtowy не может управлять яхтой длиной до 12 метров?',
     isMultiple: false,
     answers: [
       {
         textPl: 'Powyżej 4 mil',
         textRu: 'Дальше 4 миль',
-        correct: false,
+        correct: true,
       },
       {
         textPl: 'Do 2 mil',
         textRu: 'До 2 миль',
-        correct: true,
+        correct: false,
       },
       {
         textPl: 'Do 1 mil',
@@ -860,7 +860,7 @@ export const data: Question[] = [
       {
         textPl: 'Nie może',
         textRu: 'Не может',
-        correct: true,
+        correct: false,
       },
       {
         textPl: 'Może ale pod warunkiem posiadania silnika spalinowego',
@@ -870,7 +870,7 @@ export const data: Question[] = [
       {
         textPl: 'Мoże',
         textRu: 'Может',
-        correct: false,
+        correct: true,
       },
     ],
   },
@@ -1160,7 +1160,7 @@ export const data: Question[] = [
       {
         textPl: 'Wykonywaniu 30 uciśnięć i 2 oddechów ratowniczyh',
         textRu: 'Выполнении 30 компрессий и 2 искусственных вдохов',
-        correct: true,
+        correct: false,
       },
       {
         textPl:
@@ -1171,7 +1171,7 @@ export const data: Question[] = [
       {
         textPl: 'Wszystkie odpowiedzi są prawidlowe',
         textRu: 'Все ответы верны',
-        correct: false,
+        correct: true,
       },
     ],
   },
@@ -1949,7 +1949,7 @@ export const data: Question[] = [
       },
       {
         textPl: 'Sztag',
-        textRu: 'Штаг',
+        textRu: 'Форштаг',
         correct: true,
       },
     ],
@@ -2384,7 +2384,7 @@ export const data: Question[] = [
       {
         textPl: 'Wybrać tylny żagiel',
         textRu: 'Выбрать задний парус',
-        correct: false,
+        correct: true,
       },
       {
         textPl: 'Zrzucić przednie żagle',
@@ -2394,7 +2394,7 @@ export const data: Question[] = [
       {
         textPl: 'Poluzować tylny żagiel',
         textRu: 'Потравить задний парус',
-        correct: true,
+        correct: false,
       },
     ],
   },
@@ -2820,7 +2820,7 @@ export const data: Question[] = [
         textPl:
           'W kursie bajdewind wykonasz zwrot przez sztag bez luzowania foka',
         textRu:
-          'На курсе бейдевинд сделать поворот оверштаг без переброса переднего паруса',
+          'На курсе бейдевинд сделать поворот оверштаг без переброса переднего паруса (стакселя)',
         correct: true,
       },
       {
@@ -3038,7 +3038,7 @@ export const data: Question[] = [
       },
       {
         textPl: 'Zakaz żeglugi pod żaglami',
-        textRu: 'Запрет движения парусных судов',
+        textRu: 'Запрет движения под парусом',
         correct: true,
       },
     ],
