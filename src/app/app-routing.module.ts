@@ -6,22 +6,41 @@ import { MainComponent } from './pages/main/main/main.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'sail',
     component: MainComponent,
   },
   {
-    path: 'questions',
+    path: 'sail/questions',
     component: QuestionsComponent,
   },
   {
-    path: 'quiz',
+    path: 'sail/quiz',
     component: QuizComponent,
   },
   {
-    path: 'infinite',
+    path: 'sail/infinite',
     component: QuizComponent,
   },
-  { path: '**', redirectTo: '/', pathMatch: 'full' },
+
+// motor part
+  {
+    path: 'motor',
+    component: MainComponent,
+  },
+  {
+    path: 'motor/questions',
+    component: QuestionsComponent,
+  },
+  {
+    path: 'motor/quiz',
+    component: QuizComponent,
+  },
+  {
+    path: 'motor/infinite',
+    component: QuizComponent,
+  },
+  
+  { path: '**', redirectTo: '/sail', pathMatch: 'full' },
 ];
 
 @NgModule({
