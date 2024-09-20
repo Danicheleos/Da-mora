@@ -1,6 +1,7 @@
 import { Answer } from './answer.interface';
 
 export interface Question {
+  index?: number;
   textPl: string;
   textRu: string;
   answered?: number;

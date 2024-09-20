@@ -1,19 +1,23 @@
 import { Injectable } from '@angular/core';
 import { Question } from '../interfaces/question.interface';
-import { TranslateService } from '@ngx-translate/core';
 import { BehaviorSubject } from 'rxjs';
-import { data } from 'src/app/assets/data/data';
+import { data as dataSail } from 'src/app/assets/data/data-sail';
+import { data as dataMotor } from 'src/app/assets/data/data-motor';
+import { DATA_SOURCE } from 'src/app/assets/enum/datasource.enum';
 
 @Injectable({
   providedIn: 'root'
 })
 export class QuizService {
-  private data = data;
 
   public dataSource$ = new BehaviorSubject<Question[]>([]);
+  public dataSourceType$ = new BehaviorSubject<DATA_SOURCE>(DATA_SOURCE.SAIL);
+  constructor() {}
 
-  constructor() {
-    this.dataSource$.next(this.data);
+  public setDatasource(datasource: DATA_SOURCE) {
+    const data = datasource === DATA_SOURCE.SAIL ? dataSail : dataMotor;
+    this.dataSourceType$.next(datasource);
+    this.dataSource$.next(data);
   }
 
   public combineQuiz(count: number): Question[] {
