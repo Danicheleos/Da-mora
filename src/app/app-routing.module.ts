@@ -3,8 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { QuestionsComponent } from './pages/questions/questions/questions.component';
 import { QuizComponent } from './pages/quiz/quiz/quiz.component';
 import { MainComponent } from './pages/main/main/main.component';
+import { HomepageComponent } from './pages/main/homepage/homepage.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    component: HomepageComponent
+  },
   {
     path: 'sail',
     component: MainComponent,
@@ -39,7 +44,7 @@ const routes: Routes = [
     path: 'motor/infinite',
     component: QuizComponent,
   },
-  
+
   { path: '**', redirectTo: '/sail', pathMatch: 'full' },
 ];
 
