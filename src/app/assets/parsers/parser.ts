@@ -13,7 +13,7 @@ export function parseData(data: string): Question[] {
         index,
         textPl: textPl.replace(/^[0-9]*.\s/, ''),
         textRu: textRu.replace(/^[0-9]*.\s/, ''),
-        image: imagesIDS.has(index + 1) || (index >= 210 && index <= 302) ? `assets/images/motorowka/${index+1}.png` : '',
+        image: imagesIDS.has(index + 1) || (index + 1 >= 210 && index + 1 <= 302) ? `assets/images/motorowka/${index+1}.png` : '',
         answers: [
           {
             textPl: answerPL1.replace('A. ', '').replace('А. ', ''),

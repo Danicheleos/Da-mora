@@ -4810,7 +4810,7 @@ export const data = [
       "index": 209,
       "textPl": "Przedstawiony znak oznacza:",
       "textRu": "Изображенный знак означает:",
-      "image": "",
+      "image": "assets/images/motorowka/210.png",
       "answers": [
           {
               "textPl": "zakaz wyprzedzania; dotyczy tylko zestawów",
@@ -6949,7 +6949,7 @@ export const data = [
       "index": 302,
       "textPl": "Jak należy interpretować ruch w dół rzeki?",
       "textRu": "Как следует интерпретировать движение вниз по течению?",
-      "image": "assets/images/motorowka/303.png",
+      "image": "",
       "answers": [
           {
               "textPl": "ruch w kierunku źródeł rzeki",
@@ -10580,4 +10580,3 @@ export const data = [
       ]
   }
 ];
-
