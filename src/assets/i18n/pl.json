@@ -10,6 +10,8 @@
     "next": "Dalej",
     "complete": "Zakończyć",
     "restart": "Powtórz",
-    "questionsNumber": "Wybierz liczbę pytań:"
+    "questionsNumber": "Wybierz liczbę pytań:",
+    "sail": "Zeglaz jachtowy",
+    "motor": "Motorowka"
   }
 }
