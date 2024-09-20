@@ -5,6 +5,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { Router, RouterModule } from '@angular/router';
 import { QuizService } from 'src/app/core/services/quiz.service';
 import { DATA_SOURCE } from 'src/app/assets/enum/datasource.enum';
+import { dataMotor, parseData } from 'src/app/assets/parsers/parser';
 
 @Component({
   selector: 'app-main',
@@ -27,6 +28,7 @@ export class MainComponent implements OnInit {
   ){}
 
   ngOnInit(): void {
+    console.log(parseData(dataMotor));
     if (this.router.url.includes('sail')) {
       this.quizService.setDatasource(DATA_SOURCE.SAIL);
     } else {
